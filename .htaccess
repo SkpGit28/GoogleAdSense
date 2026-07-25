@@ -24,8 +24,8 @@ RewriteRule .* - [F,L]
 # ===== HOTLINK PROTECTION =====
 <IfModule mod_rewrite.c>
 RewriteCond %{HTTP_REFERER} !^$
-RewriteCond %{HTTP_REFERER} !^https://hotelglobesite\.com [NC]
-RewriteCond %{HTTP_REFERER} !^https://www\.hotelglobesite\.com [NC]
+RewriteCond %{HTTP_REFERER} !^https://primehotelpicks\.com [NC]
+RewriteCond %{HTTP_REFERER} !^https://www\.primehotelpicks\.com [NC]
 RewriteRule \.(jpg|jpeg|png|gif|webp|svg)$ - [NC,F,L]
 </IfModule>
 
