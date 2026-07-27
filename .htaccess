@@ -1,9 +1,13 @@
+# ===== ERROR DOCUMENTS =====
+ErrorDocument 404 /404.html
+
 # ===== SECURITY & BOT PROTECTION =====
 
-# Block bad bots
+# Block scraper bots. Note: Googlebot, Bingbot and AdsBot are deliberately NOT
+# listed here. Blocking them would break both search indexing and AdSense review.
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteCond %{HTTP_USER_AGENT} (ahrefs|semrush|dotbot|mj12bot|blexbot|petalbot|yandex) [NC]
+RewriteCond %{HTTP_USER_AGENT} (ahrefs|semrush|dotbot|mj12bot|blexbot|petalbot) [NC]
 RewriteRule .* - [F,L]
 </IfModule>
 
@@ -21,13 +25,12 @@ RewriteCond %{QUERY_STRING} _REQUEST(=|\[|\%[0-9A-Z]{0,2})
 RewriteRule .* - [F,L]
 </IfModule>
 
-# ===== HOTLINK PROTECTION =====
-<IfModule mod_rewrite.c>
-RewriteCond %{HTTP_REFERER} !^$
-RewriteCond %{HTTP_REFERER} !^https://primehotelpicks\.com [NC]
-RewriteCond %{HTTP_REFERER} !^https://www\.primehotelpicks\.com [NC]
-RewriteRule \.(jpg|jpeg|png|gif|webp|svg)$ - [NC,F,L]
-</IfModule>
+# NOTE: the previous hotlink-protection block was removed. It was inert (the site
+# hosted no images at the time) and it broke cross-origin favicon fetches.
+
+# NOTE: the previous catch-all "default deny" rule was removed. It returned 403
+# Forbidden for every mistyped URL instead of a real 404 page, which is bad for
+# both users and for search/AdSense review.
 
 # ===== PERFORMANCE & CACHING =====
 <IfModule mod_expires.c>
@@ -37,33 +40,35 @@ ExpiresByType image/jpeg "access plus 1 year"
 ExpiresByType image/gif "access plus 1 year"
 ExpiresByType image/png "access plus 1 year"
 ExpiresByType image/webp "access plus 1 year"
+ExpiresByType image/svg+xml "access plus 1 year"
 ExpiresByType text/css "access plus 1 month"
 ExpiresByType application/javascript "access plus 1 month"
 ExpiresByType text/html "access plus 1 hour"
+</IfModule>
+
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/javascript application/json image/svg+xml
 </IfModule>
 
 # ===== SECURITY HEADERS =====
 <IfModule mod_headers.c>
 Header set X-Content-Type-Options "nosniff"
 Header set X-Frame-Options "SAMEORIGIN"
-Header set X-XSS-Protection "1; mode=block"
 Header set Referrer-Policy "strict-origin-when-cross-origin"
-Header set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+Header set Permissions-Policy "camera=(), microphone=(), geolocation=(), interest-cohort=()"
+
+# X-XSS-Protection was removed: it is deprecated and can itself introduce
+# vulnerabilities in older browsers. A CSP replaces it.
+#
+# The googlesyndication / doubleclick / adservices entries are pre-authorised so
+# that enabling AdSense later does not silently break under CSP.
+Header set Content-Security-Policy "default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com https://partner.googleadservices.com https://tpc.googlesyndication.com https://www.googletagservices.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; frame-src https://googleads.g.doubleclick.net https://tpc.googlesyndication.com; connect-src 'self' https://pagead2.googlesyndication.com; base-uri 'self'; form-action 'self'; object-src 'none'; frame-ancestors 'self'"
 </IfModule>
 
 # ===== BLOCK DIRECTORY BROWSING =====
 Options -Indexes
 
-# ===== BLOCK ACCESS TO SENSITIVE FILES =====
-<FilesMatch "^(robots\.txt|sitemap\.xml)$">
-    Order allow,deny
-    Allow from all
+# ===== KEEP CRAWLER FILES PUBLIC =====
+<FilesMatch "^(robots\.txt|sitemap\.xml|ads\.txt)$">
+    Require all granted
 </FilesMatch>
-
-# ===== DEFAULT DENY =====
-<IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ - [F,L]
-</IfModule>

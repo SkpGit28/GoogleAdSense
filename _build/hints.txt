@@ -1,0 +1,45 @@
+# key|words that should appear in a good candidate
+rambagh-palace|rambagh
+umaid-bhawan|umaid
+samode-palace|samode
+taj-lake-palace|lake palace,taj lake
+oberoi-udaivilas|udaivilas,oberoi
+taj-mahal-palace-mumbai|taj mahal palace,taj hotel
+oberoi-mumbai|oberoi,nariman
+trident-nariman|nariman,trident
+imperial-delhi|imperial
+oberoi-delhi|oberoi
+taj-fort-aguada|aguada
+park-hyatt-goa|arossim,beach
+alila-diwa-goa|majorda,beach
+kumarakom-lake|kumarakom,backwater
+coconut-lagoon|backwater,houseboat
+itc-mughal|mughal
+taj-convention-agra|taj mahal
+brijrama-palace|darbhanga,ghat
+varanasi-ghats|ghat,ganges
+oberoi-cecil|cecil,shimla
+manali-hotel|manali,valley
+ananda-himalayas|narendra nagar,palace
+taj-rishikesh|rishikesh,ganges
+aman-i-khas|ranthambore
+oberoi-vanyavilas|ranthambore,sawai
+taj-falaknuma|falaknuma
+park-hyatt-hyderabad|banjara,hyderabad
+itc-kohenur|hyderabad,hitech
+leela-bengaluru|leela,palace
+taj-west-end|west end,bangalore
+oberoi-grand-kolkata|oberoi grand,grand hotel
+itc-royal-bengal|itc,sonar
+taj-exotica-havelock|havelock,beach
+barefoot-havelock|radhanagar,beach
+seashell-havelock|neil island,beach
+grand-dragon-ladakh|leh,ladakh
+nimmu-house|nimmu,ladakh
+stok-palace|stok
+glenburn-tea-estate|glenburn,tea
+mayfair-darjeeling|darjeeling
+taj-swarna-amritsar|golden temple,harmandir
+hyatt-amritsar|amritsar
+spice-village-thekkady|thekkady,periyar
+diphlu-river-lodge|kaziranga

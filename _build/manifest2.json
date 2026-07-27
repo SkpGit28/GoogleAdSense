@@ -1,0 +1,90 @@
+﻿[
+    {
+        "key":  "delhi-old-city",
+        "file800":  "images/hotels/delhi-old-city-800.jpg",
+        "file1200":  "images/hotels/delhi-old-city-1200.jpg",
+        "commonsFile":  "File:Chandni Chowk, 2008 (12).JPG",
+        "descpage":  "https://commons.wikimedia.org/wiki/File:Chandni_Chowk,_2008_(12).JPG",
+        "artist":  "Bahnfrend",
+        "license":  "CC BY-SA 3.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by-sa/3.0",
+        "description":  "Street scene at the looking down Ballimaran from its intersection with Chandi Chowk Road in Chandni Chowk, Delhi, India."
+    },
+    {
+        "key":  "goa-candolim",
+        "file800":  "images/hotels/goa-candolim-800.jpg",
+        "file1200":  "images/hotels/goa-candolim-1200.jpg",
+        "commonsFile":  "File:Candolim Beach in Goa.jpg",
+        "descpage":  "https://commons.wikimedia.org/wiki/File:Candolim_Beach_in_Goa.jpg",
+        "artist":  "S1ranand",
+        "license":  "CC0",
+        "licenseUrl":  "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "description":  "Candolim Beach entrance in Goa"
+    },
+    {
+        "key":  "rishikesh-bridge",
+        "file800":  "images/hotels/rishikesh-bridge-800.jpg",
+        "file1200":  "images/hotels/rishikesh-bridge-1200.jpg",
+        "commonsFile":  "File:Lakshman Jhula Bridge - Hrishikesh - Uttarakhand 001.jpg",
+        "descpage":  "https://commons.wikimedia.org/wiki/File:Lakshman_Jhula_Bridge_-_Hrishikesh_-_Uttarakhand_001.jpg",
+        "artist":  "Snehrashmi",
+        "license":  "CC BY-SA 4.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+        "description":  "Lakshman Jhula is a suspension bridge across the river Ganges, located 5 kilometres (3 mi) north-east of the city of Rishikesh in the Indian state of Uttarakhand."
+    },
+    {
+        "key":  "hostel-dorm",
+        "file800":  "images/hotels/hostel-dorm-800.jpg",
+        "file1200":  "images/hotels/hostel-dorm-1200.jpg",
+        "commonsFile":  "File:Schronisko Magurka A 871.jpg",
+        "descpage":  "https://commons.wikimedia.org/wiki/File:Schronisko_Magurka_A_871.jpg",
+        "artist":  "Ciacho5",
+        "license":  "CC BY-SA 4.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+        "description":  "Mountain hostel on Magurka Wilkowicka, Poland. 6 person dormitory."
+    },
+    {
+        "key":  "agra-taj-view",
+        "file800":  "images/hotels/agra-taj-view-800.jpg",
+        "file1200":  "images/hotels/agra-taj-view-1200.jpg",
+        "commonsFile":  "File:Agra 03-2016 04 Taj Mahal from Mehtab Bagh.jpg",
+        "descpage":  "https://commons.wikimedia.org/wiki/File:Agra_03-2016_04_Taj_Mahal_from_Mehtab_Bagh.jpg",
+        "artist":  "A.Savin",
+        "license":  "FAL",
+        "licenseUrl":  "http://artlibre.org/licence/lal/en",
+        "description":  "View from Mehtab Bagh gardens towards Taj Mahal complex in Agra, India."
+    },
+    {
+        "key":  "shimla-mall",
+        "file800":  "images/hotels/shimla-mall-800.jpg",
+        "file1200":  "images/hotels/shimla-mall-1200.jpg",
+        "commonsFile":  "File:Shimla Heritage Town Hall building.jpg",
+        "descpage":  "https://commons.wikimedia.org/wiki/File:Shimla_Heritage_Town_Hall_building.jpg",
+        "artist":  "Ganesh Mohan T",
+        "license":  "CC BY-SA 4.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+        "description":  "Shimla Heritage Town Hall building"
+    },
+    {
+        "key":  "leh-market",
+        "file800":  "images/hotels/leh-market-800.jpg",
+        "file1200":  "images/hotels/leh-market-1200.jpg",
+        "commonsFile":  "File:Leh - Main Bazaar Road.jpg",
+        "descpage":  "https://commons.wikimedia.org/wiki/File:Leh_-_Main_Bazaar_Road.jpg",
+        "artist":  "Ingo Mehling",
+        "license":  "CC BY-SA 3.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by-sa/3.0",
+        "description":  "Leh - Main Bazaar Road / Ladakh, India"
+    },
+    {
+        "key":  "kolkata-park-street",
+        "file800":  "images/hotels/kolkata-park-street-800.jpg",
+        "file1200":  "images/hotels/kolkata-park-street-1200.jpg",
+        "commonsFile":  "File:South Park Street Cemetery-Kolkata-West Bengal-DSC0013.jpg",
+        "descpage":  "https://commons.wikimedia.org/wiki/File:South_Park_Street_Cemetery-Kolkata-West_Bengal-DSC0013.jpg",
+        "artist":  "Tathagataa",
+        "license":  "CC BY-SA 4.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+        "description":  "The Park Street Cemetery was one of the earliest non-church cemeteries in the world, and probably the largest Christian cemetery outside Europe and America in the 19th century. Opened in 1767 on what was previously a marshy area, the cemetery was in use until about 1830 and is now a heritage site, protected by the Archaeological Survey of India (ASI). The cemetery was opened to relieve the pressure on the old burial ground in the heart of the city"
+    }
+]

@@ -1,0 +1,13 @@
+# ads.txt for primehotelpicks.com
+#
+# Google AdSense has not been approved for this site yet, so there is no
+# publisher ID to declare. Once AdSense approves the account, replace the line
+# below with your own publisher ID and remove the leading "#".
+#
+# The format is:
+#   google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+#
+# The trailing value (f08c47fec0942fa0) is Google's certification authority ID
+# and is the same for every publisher. Only the pub- number changes.
+#
+# google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0

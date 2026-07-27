@@ -3,25 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#ffffff">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon.svg">
 
-  <meta name="description" content="Discover the best hotels around the world. Expert reviews, travel guides, and tips to find your perfect stay.">
-  <meta name="keywords" content="best hotels, hotel reviews, travel guide, luxury hotels, budget hotels">
-  <title>Prime Hotel Picks - Best Hotel Reviews & Travel Guides</title>
+  <meta name="description" content="Researched guides to hotels in India. Real properties, rates in rupees with the month they were checked, and what is wrong with each one as well as what is good.">
+  <title>Prime Hotel Picks - Researched hotel guides for India</title>
+  <link rel="canonical" href="https://primehotelpicks.com/">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
 
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Prime Hotel Picks - Researched hotel guides for India">
+  <meta property="og:description" content="Real hotels, rupee rates with the month they were checked, and the drawbacks as well as the selling points.">
+  <meta property="og:url" content="https://primehotelpicks.com/">
+  <meta property="og:image" content="https://primehotelpicks.com/images/hotels/taj-lake-palace-1200.jpg">
+  <meta property="og:site_name" content="Prime Hotel Picks">
+  <meta property="og:locale" content="en_IN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Prime Hotel Picks - Researched hotel guides for India">
+  <meta name="twitter:description" content="Real hotels, rupee rates with the month they were checked, and the drawbacks as well as the selling points.">
+  <meta name="twitter:image" content="https://primehotelpicks.com/images/hotels/taj-lake-palace-1200.jpg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://primehotelpicks.com/#organization",
+    "name": "Prime Hotel Picks",
+    "url": "https://primehotelpicks.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://primehotelpicks.com/images/logo.png",
+      "width": 600,
+      "height": 120
+    },
+    "email": "contact@primehotelpicks.com",
+    "areaServed": { "@type": "Country", "name": "India" },
+    "founder": { "@type": "Person", "name": "Sushant Kumar", "url": "https://primehotelpicks.com/about.html" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://primehotelpicks.com/#website",
+    "url": "https://primehotelpicks.com",
+    "name": "Prime Hotel Picks",
+    "description": "Researched guides to hotels in India.",
+    "inLanguage": "en-IN",
+    "publisher": { "@id": "https://primehotelpicks.com/#organization" }
+  }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="header">
     <div class="header-top">
-      <a href="index.html" class="logo">Prime Hotel<span>Picks</span></a>
-      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
-      <nav class="nav">
+      <a href="index.html" class="logo">Prime Hotel <span>Picks</span></a>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">&#9776;</button>
+      <nav class="nav" id="site-nav">
         <a href="index.html" class="active">Home</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
@@ -30,295 +74,281 @@
   </header>
 
   <section class="hero">
-    <h1>Find Your Perfect Hotel Stay</h1>
-    <p>Expert reviews, honest ratings, and detailed guides to help you choose the best hotels worldwide.</p>
+    <div class="hero-inner">
+      <h1 class="marker">Where to actually stay in India</h1>
+      <p>Guides to real hotels, written from published rates, hotel material and guest reviews
+        read in bulk. Every rate is a rupee range with the month it was checked next to it. Every
+        hotel gets its drawbacks listed, and in most guides there is at least one property I
+        suggest you skip.</p>
+    </div>
   </section>
 
-  <main class="container">
-    <h2 class="section-title">Latest Articles</h2>
+  <main id="main">
+    <h2 class="section-title">
+      <span>All guides</span>
+      <span class="count">20 published</span>
+    </h2>
 
-    <div class="article-grid">
+    <ul class="index-list">
 
-      <article class="article-card">
-        <a href="articles/best-hotels-paris.html" class="card-link"></a>
-        <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=600&h=400&fit=crop" alt="Luxury Hotel in Paris" class="card-img">
-        <div class="card-body">
-          <span class="card-tag">Europe</span>
-          <h3>Best Hotels in Paris for Budget Travelers</h3>
-          <p>Discover affordable hotels in Paris that don't compromise on comfort or location. From boutique stays near the Eiffel Tower to charming Montmartre retreats.</p>
-          <div class="card-meta">
-            <span>Jul 20, 2026</span>
-            <span>8 min read</span>
-          </div>
+      <li class="index-row">
+        <img class="index-row__thumb" src="images/hotels/rambagh-palace-800.jpg" alt="" width="96" height="64" loading="lazy">
+        <div class="index-row__body">
+          <h3 class="index-row__title"><a href="articles/rajasthan-palace-hotels.html">Three Rajasthan palace hotels, and what they actually cost</a></h3>
+          <p class="index-row__desc">Rambagh Palace, Umaid Bhawan and Samode Haveli compared on rate, location and who each one is genuinely for.</p>
         </div>
-      </article>
-
-      <article class="article-card">
-        <a href="articles/top-luxury-hotels-bali.html" class="card-link"></a>
-        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600&h=400&fit=crop" alt="Luxury Hotel in Bali" class="card-img">
-        <div class="card-body">
-          <span class="card-tag">Asia</span>
-          <h3>Top 10 Luxury Hotels in Bali</h3>
-          <p>Experience paradise at Bali's finest luxury resorts. Private villas, infinity pools, and world-class spas await you in the Island of the Gods.</p>
-          <div class="card-meta">
-            <span>Jul 18, 2026</span>
-            <span>10 min read</span>
-          </div>
+        <div class="index-row__meta">
+          <span class="region-tag">Rajasthan</span>
+          <span>From Rs 14,000</span>
         </div>
-      </article>
+      </li>
 
-      <article class="article-card">
-        <a href="articles/best-family-hotels-orlando.html" class="card-link"></a>
-        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&h=400&fit=crop" alt="Family Hotel Orlando" class="card-img">
-        <div class="card-body">
-          <span class="card-tag">USA</span>
-          <h3>Best Family-Friendly Hotels in Orlando</h3>
-          <p>Planning a Disney vacation? These Orlando hotels offer kid-friendly amenities, pools, and proximity to the theme parks.</p>
-          <div class="card-meta">
-            <span>Jul 15, 2026</span>
-            <span>9 min read</span>
-          </div>
+      <li class="index-row">
+        <img class="index-row__thumb" src="images/hotels/taj-lake-palace-800.jpg" alt="" width="96" height="64" loading="lazy">
+        <div class="index-row__body">
+          <h3 class="index-row__title"><a href="articles/best-hotels-udaipur.html">Udaipur lake hotels, and whether the view is worth it</a></h3>
+          <p class="index-row__desc">Taj Lake Palace sits in the middle of Lake Pichola. Oberoi Udaivilas looks at it from the bank. You cannot photograph the Lake Palace from inside it.</p>
         </div>
-      </article>
-
-      <article class="article-card">
-        <a href="articles/romantic-hotels-maldives.html" class="card-link"></a>
-        <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=600&h=400&fit=crop" alt="Romantic Hotel Maldives" class="card-img">
-        <div class="card-body">
-          <span class="card-tag">Maldives</span>
-          <h3>Most Romantic Hotels in Maldives</h3>
-          <p>Overwater bungalows, sunset dinners, and crystal-clear waters. These Maldives resorts are perfect for honeymoons and romantic getaways.</p>
-          <div class="card-meta">
-            <span>Jul 12, 2026</span>
-            <span>7 min read</span>
-          </div>
+        <div class="index-row__meta">
+          <span class="region-tag">Rajasthan</span>
+          <span>From Rs 45,000</span>
         </div>
-      </article>
+      </li>
 
-      <article class="article-card">
-        <a href="articles/best-hotels-new-york-city.html" class="card-link"></a>
-        <img src="https://images.unsplash.com/photo-1534430480872-3498386e7856?w=600&h=400&fit=crop" alt="Hotel New York City" class="card-img">
-        <div class="card-body">
-          <span class="card-tag">USA</span>
-          <h3>Best Hotels in New York City with a View</h3>
-          <p>Wake up to the Manhattan skyline. These NYC hotels offer stunning views of Central Park, Times Square, and the Hudson River.</p>
-          <div class="card-meta">
-            <span>Jul 10, 2026</span>
-            <span>8 min read</span>
-          </div>
+      <li class="index-row">
+        <img class="index-row__thumb" src="images/hotels/taj-mahal-palace-mumbai-800.jpg" alt="" width="96" height="64" loading="lazy">
+        <div class="index-row__body">
+          <h3 class="index-row__title"><a href="articles/heritage-hotels-mumbai.html">Mumbai harbour hotels: three addresses, three very different bills</a></h3>
+          <p class="index-row__desc">The Taj at Colaba, The Oberoi and Trident at Nariman Point. Which wing you book at the Taj matters more than the booking page admits.</p>
         </div>
-      </article>
-
-      <article class="article-card">
-        <a href="articles/top-boutique-hotels-london.html" class="card-link"></a>
-        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600&h=400&fit=crop" alt="Boutique Hotel London" class="card-img">
-        <div class="card-body">
-          <span class="card-tag">Europe</span>
-          <h3>Top Boutique Hotels in London</h3>
-          <p>From Notting Hill charm to Shoreditch cool, these boutique hotels in London offer style, character, and personalized service.</p>
-          <div class="card-meta">
-            <span>Jul 8, 2026</span>
-            <span>7 min read</span>
-          </div>
+        <div class="index-row__meta">
+          <span class="region-tag">Maharashtra</span>
+          <span>From Rs 16,000</span>
         </div>
-      </article>
+      </li>
 
-      <article class="article-card">
-        <a href="articles/best-beach-resorts-thailand.html" class="card-link"></a>
-        <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?w=600&h=400&fit=crop" alt="Beach Resort Thailand" class="card-img">
-        <div class="card-body">
-          <span class="card-tag">Asia</span>
-          <h3>Best Beach Resorts in Thailand</h3>
-          <p>White sand beaches, turquoise waters, and tropical luxury. These Thailand resorts offer the ultimate beach getaway experience.</p>
-          <div class="card-meta">
-            <span>Jul 5, 2026</span>
-            <span>9 min read</span>
-          </div>
+      <li class="index-row">
+        <img class="index-row__thumb" src="images/hotels/kumarakom-lake-800.jpg" alt="" width="96" height="64" loading="lazy">
+        <div class="index-row__body">
+          <h3 class="index-row__title"><a href="articles/kerala-backwater-resorts.html">Kerala backwaters: resort, houseboat, or both</a></h3>
+          <p class="index-row__desc">Houseboats moor at dusk and do not move again until morning. Why one night on the water is the right number, and where to sleep the rest of the time.</p>
         </div>
-      </article>
-
-      <article class="article-card">
-        <a href="articles/most-unique-hotels-world.html" class="card-link"></a>
-        <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=600&h=400&fit=crop" alt="Unique Hotel" class="card-img">
-        <div class="card-body">
-          <span class="card-tag">World</span>
-          <h3>Most Unique Hotels in the World</h3>
-          <p>Treehouses, ice hotels, underwater suites, and converted castles. These one-of-a-kind hotels will make your stay unforgettable.</p>
-          <div class="card-meta">
-            <span>Jul 3, 2026</span>
-            <span>11 min read</span>
-          </div>
+        <div class="index-row__meta">
+          <span class="region-tag">Kerala</span>
+          <span>From Rs 9,000</span>
         </div>
-      </article>
+      </li>
 
-      <article class="article-card">
-        <a href="articles/best-hotels-dubai-luxury.html" class="card-link"></a>
-        <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=600&h=400&fit=crop" alt="Luxury Hotel Dubai" class="card-img">
-        <div class="card-body">
-          <span class="card-tag">Middle East</span>
-          <h3>Best Hotels in Dubai for Luxury Stay</h3>
-          <p>From Burj Al Arab to Palm Jumeirah, these Dubai hotels redefine luxury with opulent suites and world-class dining.</p>
-          <div class="card-meta">
-            <span>Jul 1, 2026</span>
-            <span>8 min read</span>
-          </div>
+      <li class="index-row">
+        <img class="index-row__thumb" src="images/hotels/brijrama-palace-800.jpg" alt="" width="96" height="64" loading="lazy">
+        <div class="index-row__body">
+          <h3 class="index-row__title"><a href="articles/varanasi-ghat-hotels.html">Varanasi ghat hotels, and the catch nobody mentions</a></h3>
+          <p class="index-row__desc">Most of the riverfront has no road access. You either walk in through the lanes with your luggage or arrive by boat.</p>
         </div>
-      </article>
-
-      <article class="article-card">
-        <a href="articles/top-hotels-tokyo-first-time.html" class="card-link"></a>
-        <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=600&h=400&fit=crop" alt="Hotel Tokyo" class="card-img">
-        <div class="card-body">
-          <span class="card-tag">Asia</span>
-          <h3>Top Hotels in Tokyo for First-Time Visitors</h3>
-          <p>Navigate Tokyo's hotel scene with ease. These centrally located hotels offer convenience, comfort, and authentic Japanese hospitality.</p>
-          <div class="card-meta">
-            <span>Jun 28, 2026</span>
-            <span>9 min read</span>
-          </div>
+        <div class="index-row__meta">
+          <span class="region-tag">Uttar Pradesh</span>
+          <span>From Rs 12,000</span>
         </div>
-      </article>
+      </li>
 
-      <article class="article-card">
-        <a href="articles/best-hotels-rome-colosseum.html" class="card-link"></a>
-        <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=600&h=400&fit=crop" alt="Hotel Rome" class="card-img">
-        <div class="card-body">
-          <span class="card-tag">Europe</span>
-          <h3>Best Hotels in Rome Near the Colosseum</h3>
-          <p>Stay steps away from ancient history. These handpicked hotels combine Roman charm with modern comfort near the iconic Colosseum.</p>
-          <div class="card-meta">
-            <span>Jun 25, 2026</span>
-            <span>7 min read</span>
-          </div>
+      <li class="index-row">
+        <img class="index-row__thumb" src="images/hotels/leela-bengaluru-800.jpg" alt="" width="96" height="64" loading="lazy">
+        <div class="index-row__body">
+          <h3 class="index-row__title"><a href="articles/bengaluru-business-hotels.html">Bengaluru business hotels: pick by traffic, not by star rating</a></h3>
+          <p class="index-row__desc">Whitefield and Electronic City are on opposite sides of the city. Choosing the wrong side costs you two hours a day.</p>
         </div>
-      </article>
-
-      <article class="article-card">
-        <a href="articles/most-instagrammable-hotels-santorini.html" class="card-link"></a>
-        <img src="https://images.unsplash.com/photo-1570213489059-0aac6626cade?w=600&h=400&fit=crop" alt="Hotel Santorini" class="card-img">
-        <div class="card-body">
-          <span class="card-tag">Europe</span>
-          <h3>Most Instagrammable Hotels in Santorini</h3>
-          <p>Blue domes, white-washed walls, and sunset views. These Santorini hotels are made for your perfect photo opportunity.</p>
-          <div class="card-meta">
-            <span>Jun 22, 2026</span>
-            <span>6 min read</span>
-          </div>
+        <div class="index-row__meta">
+          <span class="region-tag">Karnataka</span>
+          <span>From Rs 13,000</span>
         </div>
-      </article>
+      </li>
 
-      <article class="article-card">
-        <a href="articles/best-all-inclusive-resorts-caribbean.html" class="card-link"></a>
-        <img src="https://images.unsplash.com/photo-1548574505-5e239809ee19?w=600&h=400&fit=crop" alt="Caribbean Resort" class="card-img">
-        <div class="card-body">
-          <span class="card-tag">Caribbean</span>
-          <h3>Best All-Inclusive Resorts in Caribbean</h3>
-          <p>From Jamaica to Bahamas, these resorts offer everything you need for the perfect tropical vacation.</p>
-          <div class="card-meta">
-            <span>Jun 20, 2026</span>
-            <span>10 min read</span>
-          </div>
+      <li class="index-row">
+        <img class="index-row__thumb" src="images/hotels/imperial-delhi-800.jpg" alt="" width="96" height="64" loading="lazy">
+        <div class="index-row__body">
+          <h3 class="index-row__title"><a href="articles/best-hotels-new-delhi.html">Where to stay in Delhi, and why the area matters more than the hotel</a></h3>
+          <p class="index-row__desc">The Imperial and Lutyens options against staying in the old city or near the airport. Metro lines, traffic and indicative rates.</p>
         </div>
-      </article>
-
-      <article class="article-card">
-        <a href="articles/top-eco-friendly-hotels-costa-rica.html" class="card-link"></a>
-        <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=600&h=400&fit=crop" alt="Costa Rica Eco Lodge" class="card-img">
-        <div class="card-body">
-          <span class="card-tag">Central America</span>
-          <h3>Top Eco-Friendly Hotels in Costa Rica</h3>
-          <p>Sustainable luxury in the heart of nature. These eco-lodges combine comfort with environmental responsibility.</p>
-          <div class="card-meta">
-            <span>Jun 18, 2026</span>
-            <span>9 min read</span>
-          </div>
+        <div class="index-row__meta">
+          <span class="region-tag">Delhi</span>
+          <span>From Rs 3,500</span>
         </div>
-      </article>
+      </li>
 
-      <article class="article-card">
-        <a href="articles/best-hotels-las-vegas-strip.html" class="card-link"></a>
-        <img src="https://images.unsplash.com/photo-1605833556294-ea5c7a74f57d?w=600&h=400&fit=crop" alt="Las Vegas Strip" class="card-img">
-        <div class="card-body">
-          <span class="card-tag">USA</span>
-          <h3>Best Hotels in Las Vegas on the Strip</h3>
-          <p>Find the perfect Vegas hotel. From luxury resorts to budget-friendly options on the famous Strip.</p>
-          <div class="card-meta">
-            <span>Jun 15, 2026</span>
-            <span>8 min read</span>
-          </div>
+      <li class="index-row">
+        <img class="index-row__thumb" src="images/hotels/taj-fort-aguada-800.jpg" alt="" width="96" height="64" loading="lazy">
+        <div class="index-row__body">
+          <h3 class="index-row__title"><a href="articles/beach-resorts-goa.html">Goa: north or south, and what that choice actually costs you</a></h3>
+          <p class="index-row__desc">Taj Fort Aguada in the north against quiet south Goa beaches. Which coast suits which trip, with indicative rates.</p>
         </div>
-      </article>
-
-      <article class="article-card">
-        <a href="articles/most-historic-hotels-europe.html" class="card-link"></a>
-        <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=600&h=400&fit=crop" alt="Historic European Hotel" class="card-img">
-        <div class="card-body">
-          <span class="card-tag">Europe</span>
-          <h3>Most Historic Hotels in Europe</h3>
-          <p>Step back in time at Europe's most storied properties. Castle hotels and palatial experiences await.</p>
-          <div class="card-meta">
-            <span>Jun 12, 2026</span>
-            <span>10 min read</span>
-          </div>
+        <div class="index-row__meta">
+          <span class="region-tag">Goa</span>
+          <span>From Rs 4,000</span>
         </div>
-      </article>
+      </li>
 
-      <article class="article-card">
-        <a href="articles/best-hotels-sydney-harbour.html" class="card-link"></a>
-        <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=600&h=400&fit=crop" alt="Sydney Harbour" class="card-img">
-        <div class="card-body">
-          <span class="card-tag">Australia</span>
-          <h3>Best Hotels in Sydney Harbour View</h3>
-          <p>Wake up to the Opera House and Harbour Bridge. These hotels offer the best views in Sydney.</p>
-          <div class="card-meta">
-            <span>Jun 10, 2026</span>
-            <span>8 min read</span>
-          </div>
+      <li class="index-row">
+        <img class="index-row__thumb" src="images/hotels/taj-convention-agra-800.jpg" alt="" width="96" height="64" loading="lazy">
+        <div class="index-row__body">
+          <h3 class="index-row__title"><a href="articles/hotels-near-taj-mahal-agra.html">Hotels near the Taj Mahal, and which ones actually have the view</a></h3>
+          <p class="index-row__desc">Taj-facing rooms in Agra are a small and expensive category, and many hotels claiming a view do not have one.</p>
         </div>
-      </article>
-
-      <article class="article-card">
-        <a href="articles/top-ski-resorts-switzerland.html" class="card-link"></a>
-        <img src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=600&h=400&fit=crop" alt="Swiss Ski Resort" class="card-img">
-        <div class="card-body">
-          <span class="card-tag">Europe</span>
-          <h3>Top Ski Resorts in Switzerland</h3>
-          <p>Hit the slopes at Switzerland's finest alpine resorts. World-class skiing and stunning mountain views.</p>
-          <div class="card-meta">
-            <span>Jun 8, 2026</span>
-            <span>9 min read</span>
-          </div>
+        <div class="index-row__meta">
+          <span class="region-tag">Uttar Pradesh</span>
+          <span>From Rs 2,500</span>
         </div>
-      </article>
+      </li>
 
-      <article class="article-card">
-        <a href="articles/best-hotels-singapore-business.html" class="card-link"></a>
-        <img src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=600&h=400&fit=crop" alt="Singapore Business Hotel" class="card-img">
-        <div class="card-body">
-          <span class="card-tag">Asia</span>
-          <h3>Best Hotels in Singapore for Business</h3>
-          <p>Convenient locations, excellent meeting facilities, and comfort for productive business trips.</p>
-          <div class="card-meta">
-            <span>Jun 5, 2026</span>
-            <span>8 min read</span>
-          </div>
+      <li class="index-row">
+        <img class="index-row__thumb" src="images/hotels/oberoi-cecil-800.jpg" alt="" width="96" height="64" loading="lazy">
+        <div class="index-row__body">
+          <h3 class="index-row__title"><a href="articles/himachal-hill-station-hotels.html">Himachal hill station hotels: Shimla, Manali and the altitude trade-off</a></h3>
+          <p class="index-row__desc">The Oberoi Cecil in Shimla against valley stays in Manali. Heritage ridge walks against high mountain pass drives.</p>
         </div>
-      </article>
-
-      <article class="article-card">
-        <a href="articles/most-affordable-luxury-hotels-mexico.html" class="card-link"></a>
-        <img src="https://images.unsplash.com/photo-1510097467424-192d713fd8b2?w=600&h=400&fit=crop" alt="Mexico Luxury Hotel" class="card-img">
-        <div class="card-body">
-          <span class="card-tag">Mexico</span>
-          <h3>Most Affordable Luxury Hotels in Mexico</h3>
-          <p>Luxury without the price tag. Mexico's finest hotels offer exceptional value for discerning travelers.</p>
-          <div class="card-meta">
-            <span>Jun 3, 2026</span>
-            <span>9 min read</span>
-          </div>
+        <div class="index-row__meta">
+          <span class="region-tag">Himachal</span>
+          <span>From Rs 3,500</span>
         </div>
-      </article>
+      </li>
 
+      <li class="index-row">
+        <img class="index-row__thumb" src="images/hotels/taj-rishikesh-800.jpg" alt="" width="96" height="64" loading="lazy">
+        <div class="index-row__body">
+          <h3 class="index-row__title"><a href="articles/rishikesh-wellness-retreats.html">Rishikesh wellness retreats: riverfront luxury against Tapovan ashrams</a></h3>
+          <p class="index-row__desc">Taj Rishikesh and isolated river retreats against staying near Lakshman Jhula. Silence upriver against walking to yoga classes.</p>
+        </div>
+        <div class="index-row__meta">
+          <span class="region-tag">Uttarakhand</span>
+          <span>From Rs 3,800</span>
+        </div>
+      </li>
+
+      <li class="index-row">
+        <img class="index-row__thumb" src="images/hotels/aman-i-khas-800.jpg" alt="" width="96" height="64" loading="lazy">
+        <div class="index-row__body">
+          <h3 class="index-row__title"><a href="articles/wildlife-lodges-ranthambore.html">Ranthambore wildlife lodges: luxury tents, zones and safari booking reality</a></h3>
+          <p class="index-row__desc">Aman-i-Khas and Oberoi Vanyavilas against the reality of forest zone permit caps. Tented luxury and safari permit planning.</p>
+        </div>
+        <div class="index-row__meta">
+          <span class="region-tag">Rajasthan</span>
+          <span>From Rs 65,000</span>
+        </div>
+      </li>
+
+      <li class="index-row">
+        <img class="index-row__thumb" src="images/hotels/taj-falaknuma-800.jpg" alt="" width="96" height="64" loading="lazy">
+        <div class="index-row__body">
+          <h3 class="index-row__title"><a href="articles/hyderabad-luxury-hotels.html">Hyderabad luxury hotels: palace grandeur against tech corridor convenience</a></h3>
+          <p class="index-row__desc">Taj Falaknuma Palace in the old city against ITC Kohenur in HITEC City and Park Hyatt in Banjara Hills.</p>
+        </div>
+        <div class="index-row__meta">
+          <span class="region-tag">Telangana</span>
+          <span>From Rs 11,500</span>
+        </div>
+      </li>
+
+      <li class="index-row">
+        <img class="index-row__thumb" src="images/hotels/oberoi-grand-kolkata-800.jpg" alt="" width="96" height="64" loading="lazy">
+        <div class="index-row__body">
+          <h3 class="index-row__title"><a href="articles/kolkata-heritage-hotels.html">Kolkata heritage hotels: grand colonial addresses against modern high-rises</a></h3>
+          <p class="index-row__desc">The Oberoi Grand on Chowringhee against ITC Royal Bengal on EM Bypass and Park Street dining district stays.</p>
+        </div>
+        <div class="index-row__meta">
+          <span class="region-tag">West Bengal</span>
+          <span>From Rs 4,200</span>
+        </div>
+      </li>
+
+      <li class="index-row">
+        <img class="index-row__thumb" src="images/hotels/taj-exotica-havelock-800.jpg" alt="" width="96" height="64" loading="lazy">
+        <div class="index-row__body">
+          <h3 class="index-row__title"><a href="articles/andaman-island-resorts.html">Andaman island resorts: Havelock beach luxury and the ferry reality</a></h3>
+          <p class="index-row__desc">Taj Exotica on Radhanagar Beach against Barefoot eco-cottages and ferry connection logistics from Port Blair.</p>
+        </div>
+        <div class="index-row__meta">
+          <span class="region-tag">Andamans</span>
+          <span>From Rs 9,800</span>
+        </div>
+      </li>
+
+      <li class="index-row">
+        <img class="index-row__thumb" src="images/hotels/nimmu-house-800.jpg" alt="" width="96" height="64" loading="lazy">
+        <div class="index-row__body">
+          <h3 class="index-row__title"><a href="articles/ladakh-hotels-leh.html">Ladakh hotels in Leh: heritage houses, high altitude and the acclimatisation rule</a></h3>
+          <p class="index-row__desc">Nimmu House and Stok Palace against family guesthouses in Leh town. High altitude rest rules and solar heating.</p>
+        </div>
+        <div class="index-row__meta">
+          <span class="region-tag">Ladakh</span>
+          <span>From Rs 2,800</span>
+        </div>
+      </li>
+
+      <li class="index-row">
+        <img class="index-row__thumb" src="images/hotels/glenburn-tea-estate-800.jpg" alt="" width="96" height="64" loading="lazy">
+        <div class="index-row__body">
+          <h3 class="index-row__title"><a href="articles/darjeeling-tea-estate-stays.html">Darjeeling tea estate stays: colonial bungalows against town hotels</a></h3>
+          <p class="index-row__desc">Glenburn Tea Estate in the valley against Mayfair Darjeeling on the ridge. Quiet plantation walks against town square access.</p>
+        </div>
+        <div class="index-row__meta">
+          <span class="region-tag">West Bengal</span>
+          <span>From Rs 2,500</span>
+        </div>
+      </li>
+
+      <li class="index-row">
+        <img class="index-row__thumb" src="images/hotels/taj-swarna-amritsar-800.jpg" alt="" width="96" height="64" loading="lazy">
+        <div class="index-row__body">
+          <h3 class="index-row__title"><a href="articles/amritsar-hotels-golden-temple.html">Amritsar hotels: how close to the Golden Temple do you need to be</a></h3>
+          <p class="index-row__desc">Heritage Street stays walking distance to Sri Harmandir Sahib against Taj Swarna on the outer ring road and free pilgrim sarais.</p>
+        </div>
+        <div class="index-row__meta">
+          <span class="region-tag">Punjab</span>
+          <span>From Free</span>
+        </div>
+      </li>
+
+      <li class="index-row">
+        <img class="index-row__thumb" src="images/hotels/varanasi-ghats-800.jpg" alt="" width="96" height="64" loading="lazy">
+        <div class="index-row__body">
+          <h3 class="index-row__title"><a href="articles/budget-hostels-india.html">Budget hostels in India: what Rs 700 a night actually gets you</a></h3>
+          <p class="index-row__desc">The hostel chains, what to check before booking a dorm in India, and where the cheap end genuinely works.</p>
+        </div>
+        <div class="index-row__meta">
+          <span class="region-tag">India</span>
+          <span>From Rs 500</span>
+        </div>
+      </li>
+
+      <li class="index-row">
+        <img class="index-row__thumb" src="images/hotels/spice-village-thekkady-800.jpg" alt="" width="96" height="64" loading="lazy">
+        <div class="index-row__body">
+          <h3 class="index-row__title"><a href="articles/eco-stays-india.html">Eco stays in India: separating real practice from green paint</a></h3>
+          <p class="index-row__desc">Spice Village in Thekkady, Kaziranga bamboo lodges and how to check whether a property's sustainability claims mean anything.</p>
+        </div>
+        <div class="index-row__meta">
+          <span class="region-tag">India</span>
+          <span>From Rs 8,000</span>
+        </div>
+      </li>
+    </ul>
+
+    <div class="container">
+      <div class="ad-slot ad-bottom"></div>
+    </div>
+
+    <h2 class="section-title"><span>How this site works</span></h2>
+
+    <div class="container">
+      <div class="highlight-box" style="max-width:70ch;">
+        <h4>The short version</h4>
+        <ul>
+          <li>One writer, <a href="about.html">Sushant Kumar</a>, named on every guide. No invented co-authors.</li>
+          <li>Rates are ranges in rupees, each stamped with the month checked. They move, so check before booking.</li>
+          <li>I have not stayed at every hotel here and the site does not pretend I have.</li>
+          <li>Photographs are other people's work, credited on the <a href="credits.html">credits page</a>.</li>
+          <li>Where something could not be confirmed, the guide says so.</li>
+        </ul>
+      </div>
     </div>
   </main>
 
@@ -326,14 +356,15 @@
     <div class="footer-grid">
       <div class="footer-col">
         <h4>Prime Hotel Picks</h4>
-        <p style="font-size:0.9rem; line-height:1.6;">Your trusted source for honest hotel reviews, travel guides, and accommodation tips worldwide.</p>
+        <p>Researched guides to where you actually stay in India. Rates, locations and trade-offs, checked and dated.</p>
       </div>
       <div class="footer-col">
-        <h4>Quick Links</h4>
+        <h4>Site</h4>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><a href="credits.html">Photo credits</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -345,27 +376,28 @@
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Destinations</h4>
+        <h4>Regions</h4>
         <ul>
-          <li><a href="articles/best-hotels-paris.html">Paris</a></li>
-          <li><a href="articles/top-luxury-hotels-bali.html">Bali</a></li>
-          <li><a href="articles/best-hotels-new-york-city.html">New York</a></li>
-          <li><a href="articles/best-hotels-dubai-luxury.html">Dubai</a></li>
+          <li><a href="articles/rajasthan-palace-hotels.html">Rajasthan</a></li>
+          <li><a href="articles/heritage-hotels-mumbai.html">Maharashtra</a></li>
+          <li><a href="articles/kerala-backwater-resorts.html">Kerala</a></li>
+          <li><a href="articles/bengaluru-business-hotels.html">Karnataka</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 Prime Hotel Picks. All rights reserved.</p>
+      <p>&copy; 2026 Prime Hotel Picks</p>
+      <p>Hotel photographs are credited to their photographers on the <a href="credits.html">credits page</a>.</p>
     </div>
   </footer>
 
   <script src="js/main.js"></script>
 
-  <!-- Cookie Consent Banner -->
   <div class="cookie-consent">
     <div class="cookie-consent__inner">
       <div class="cookie-consent__text">
-        We use cookies to enhance your experience and analyze site traffic. By clicking "Accept", you consent to our use of cookies. <a href="privacy.html">Learn more</a>.
+        This site uses cookies for basic analytics, and for advertising if you accept. Decline and no
+        advertising or analytics cookies are set. <a href="privacy.html">Read the privacy policy</a>.
       </div>
       <div class="cookie-consent__buttons">
         <button class="cookie-consent__btn cookie-consent__btn--accept">Accept</button>
@@ -373,6 +405,5 @@
       </div>
     </div>
   </div>
-
 </body>
 </html>

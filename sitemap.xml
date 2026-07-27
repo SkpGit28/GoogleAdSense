@@ -2,158 +2,164 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://primehotelpicks.com/</loc>
-    <lastmod>2026-07-26</lastmod>
+    <lastmod>2026-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://primehotelpicks.com/about.html</loc>
-    <lastmod>2026-07-26</lastmod>
+    <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://primehotelpicks.com/contact.html</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://primehotelpicks.com/credits.html</loc>
+    <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://primehotelpicks.com/privacy.html</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-07-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://primehotelpicks.com/terms.html</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-07-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://primehotelpicks.com/disclaimer.html</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-07-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://primehotelpicks.com/articles/best-hotels-paris.html</loc>
-    <lastmod>2026-07-26</lastmod>
+    <loc>https://primehotelpicks.com/articles/rajasthan-palace-hotels.html</loc>
+    <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://primehotelpicks.com/articles/top-luxury-hotels-bali.html</loc>
-    <lastmod>2026-07-26</lastmod>
+    <loc>https://primehotelpicks.com/articles/best-hotels-udaipur.html</loc>
+    <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://primehotelpicks.com/articles/best-family-hotels-orlando.html</loc>
-    <lastmod>2026-07-26</lastmod>
+    <loc>https://primehotelpicks.com/articles/heritage-hotels-mumbai.html</loc>
+    <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://primehotelpicks.com/articles/romantic-hotels-maldives.html</loc>
-    <lastmod>2026-07-26</lastmod>
+    <loc>https://primehotelpicks.com/articles/kerala-backwater-resorts.html</loc>
+    <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://primehotelpicks.com/articles/best-hotels-new-york-city.html</loc>
-    <lastmod>2026-07-26</lastmod>
+    <loc>https://primehotelpicks.com/articles/varanasi-ghat-hotels.html</loc>
+    <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://primehotelpicks.com/articles/top-boutique-hotels-london.html</loc>
-    <lastmod>2026-07-26</lastmod>
+    <loc>https://primehotelpicks.com/articles/bengaluru-business-hotels.html</loc>
+    <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://primehotelpicks.com/articles/best-beach-resorts-thailand.html</loc>
-    <lastmod>2026-07-26</lastmod>
+    <loc>https://primehotelpicks.com/articles/best-hotels-new-delhi.html</loc>
+    <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://primehotelpicks.com/articles/most-unique-hotels-world.html</loc>
-    <lastmod>2026-07-26</lastmod>
+    <loc>https://primehotelpicks.com/articles/beach-resorts-goa.html</loc>
+    <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://primehotelpicks.com/articles/best-hotels-dubai-luxury.html</loc>
-    <lastmod>2026-07-26</lastmod>
+    <loc>https://primehotelpicks.com/articles/hotels-near-taj-mahal-agra.html</loc>
+    <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://primehotelpicks.com/articles/top-hotels-tokyo-first-time.html</loc>
-    <lastmod>2026-07-26</lastmod>
+    <loc>https://primehotelpicks.com/articles/himachal-hill-station-hotels.html</loc>
+    <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://primehotelpicks.com/articles/best-hotels-rome-colosseum.html</loc>
-    <lastmod>2026-07-26</lastmod>
+    <loc>https://primehotelpicks.com/articles/rishikesh-wellness-retreats.html</loc>
+    <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://primehotelpicks.com/articles/most-instagrammable-hotels-santorini.html</loc>
-    <lastmod>2026-07-26</lastmod>
+    <loc>https://primehotelpicks.com/articles/wildlife-lodges-ranthambore.html</loc>
+    <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://primehotelpicks.com/articles/best-all-inclusive-resorts-caribbean.html</loc>
-    <lastmod>2026-07-26</lastmod>
+    <loc>https://primehotelpicks.com/articles/hyderabad-luxury-hotels.html</loc>
+    <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://primehotelpicks.com/articles/top-eco-friendly-hotels-costa-rica.html</loc>
-    <lastmod>2026-07-26</lastmod>
+    <loc>https://primehotelpicks.com/articles/kolkata-heritage-hotels.html</loc>
+    <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://primehotelpicks.com/articles/best-hotels-las-vegas-strip.html</loc>
-    <lastmod>2026-07-26</lastmod>
+    <loc>https://primehotelpicks.com/articles/andaman-island-resorts.html</loc>
+    <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://primehotelpicks.com/articles/most-historic-hotels-europe.html</loc>
-    <lastmod>2026-07-26</lastmod>
+    <loc>https://primehotelpicks.com/articles/ladakh-hotels-leh.html</loc>
+    <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://primehotelpicks.com/articles/best-hotels-sydney-harbour.html</loc>
-    <lastmod>2026-07-26</lastmod>
+    <loc>https://primehotelpicks.com/articles/darjeeling-tea-estate-stays.html</loc>
+    <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://primehotelpicks.com/articles/top-ski-resorts-switzerland.html</loc>
-    <lastmod>2026-07-26</lastmod>
+    <loc>https://primehotelpicks.com/articles/amritsar-hotels-golden-temple.html</loc>
+    <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://primehotelpicks.com/articles/best-hotels-singapore-business.html</loc>
-    <lastmod>2026-07-26</lastmod>
+    <loc>https://primehotelpicks.com/articles/budget-hostels-india.html</loc>
+    <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://primehotelpicks.com/articles/most-affordable-luxury-hotels-mexico.html</loc>
-    <lastmod>2026-07-26</lastmod>
+    <loc>https://primehotelpicks.com/articles/eco-stays-india.html</loc>
+    <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
 </urlset>

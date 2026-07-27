@@ -1,0 +1,57 @@
+# key|search terms
+rambagh-palace|Rambagh Palace Jaipur
+umaid-bhawan|Umaid Bhawan Palace Jodhpur
+samode-palace|Samode Palace Rajasthan
+taj-lake-palace|Taj Lake Palace Udaipur
+oberoi-udaivilas|Udaivilas Udaipur
+leela-udaipur|Leela Palace Udaipur
+taj-mahal-palace-mumbai|Taj Mahal Palace Hotel Mumbai
+oberoi-mumbai|Oberoi Hotel Nariman Point Mumbai
+trident-nariman|Trident Nariman Point Mumbai
+imperial-delhi|Imperial Hotel New Delhi
+oberoi-delhi|Oberoi Hotel New Delhi
+haveli-dharampura|Haveli Dharampura Chandni Chowk
+taj-fort-aguada|Fort Aguada Goa
+park-hyatt-goa|Arossim Beach Goa
+alila-diwa-goa|Majorda Beach Goa
+kumarakom-lake|Kumarakom Kerala backwaters resort
+coconut-lagoon|Kumarakom houseboat backwaters
+brunton-boatyard|Fort Kochi waterfront hotel
+oberoi-amarvilas|Oberoi Amarvilas Agra
+itc-mughal|ITC Mughal Agra
+taj-convention-agra|Taj Mahal Agra hotel view
+brijrama-palace|Darbhanga Ghat Varanasi
+taj-nadesar|Nadesar Palace Varanasi
+varanasi-ghats|Varanasi ghats Ganges riverfront
+wildflower-hall|Wildflower Hall Mashobra Shimla
+oberoi-cecil|Cecil Hotel Shimla
+manali-hotel|Manali Himachal Pradesh hotel valley
+ananda-himalayas|Narendra Nagar Tehri palace
+taj-rishikesh|Rishikesh Ganges river
+aman-i-khas|Ranthambore National Park
+oberoi-vanyavilas|Sawai Madhopur Ranthambore tiger
+sujan-sher-bagh|Ranthambore tent camp safari
+taj-falaknuma|Falaknuma Palace Hyderabad
+park-hyatt-hyderabad|Banjara Hills Hyderabad
+itc-kohenur|Hitech City Hyderabad
+leela-bengaluru|Leela Palace Bangalore
+itc-gardenia|ITC Gardenia Bangalore
+taj-west-end|Taj West End Bangalore
+oberoi-grand-kolkata|Oberoi Grand Kolkata
+itc-royal-bengal|ITC Sonar Kolkata
+astor-kolkata|Chowringhee Kolkata heritage building
+taj-exotica-havelock|Havelock Island Andaman beach
+barefoot-havelock|Radhanagar Beach Havelock
+seashell-havelock|Neil Island Andaman
+grand-dragon-ladakh|Leh Ladakh hotel
+nimmu-house|Nimmu village Ladakh
+stok-palace|Stok Palace Ladakh
+glenburn-tea-estate|Glenburn Tea Estate Darjeeling
+windamere-darjeeling|Windamere Hotel Darjeeling
+mayfair-darjeeling|Darjeeling town hill station
+taj-swarna-amritsar|Golden Temple Amritsar
+hyatt-amritsar|Amritsar Punjab city
+zostel-hostel|backpacker hostel India dormitory
+spice-village-thekkady|Thekkady Periyar Kerala
+diphlu-river-lodge|Kaziranga National Park Assam
+cgh-earth|Kerala eco resort tharavadu
