@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <meta name="description" content="Calculate your total India trip budget, including suggested hotel per-night spend based on your travel style.">
+  <title>India Trip Budget Calculator - Prime Hotel Picks</title>
+  <link rel="canonical" href="https://primehotelpicks.com/budget-calculator.html">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+
+  
+  
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6151386626480770" crossorigin="anonymous"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="header">
+    <div class="header-top">
+      <a href="index.html" class="logo">Prime Hotel <span>Picks</span></a>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">&#9776;</button>
+      <nav class="nav" id="site-nav">
+        <a href="index.html">Home</a>
+        <a href="tools.html" class="active">Tools</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  
+  <div class="article-header">
+    <div class="article-header__inner">
+      <h1 class="marker">India Trip Budget Calculator</h1>
+      <div class="article-meta-bar">
+        <span>Interactive Tool</span>
+        <span class="badge badge--sourced">Instant Calculation</span>
+      </div>
+    </div>
+  </div>
+
+  <main id="main" class="legal-page">
+    <p>Use this calculator to determine how much you should allocate for hotels per night based on your overall trip budget, duration, and travel style.</p>
+
+    <div style="background: var(--bg-card, #f9f9f9); padding: var(--s-6); border-radius: 8px; border: 1px solid var(--rule); margin-top: var(--s-6);">
+        <form id="budgetForm" onsubmit="event.preventDefault(); calculateBudget();" style="display: flex; flex-direction: column; gap: var(--s-4);">
+            <div>
+                <label for="totalBudget" style="display:block; font-weight: 600; margin-bottom: var(--s-2);">Total Trip Budget (₹)</label>
+                <input type="number" id="totalBudget" required min="1000" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-family: var(--font-ui);">
+            </div>
+            <div>
+                <label for="days" style="display:block; font-weight: 600; margin-bottom: var(--s-2);">Duration (Days)</label>
+                <input type="number" id="days" required min="1" max="90" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-family: var(--font-ui);">
+            </div>
+            <div>
+                <label for="style" style="display:block; font-weight: 600; margin-bottom: var(--s-2);">Travel Style</label>
+                <select id="style" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-family: var(--font-ui);">
+                    <option value="budget">Budget (Hostels / Cheap Eats / Local Transport)</option>
+                    <option value="standard" selected>Standard (3-4 Star Hotels / Mixed Dining / Cabs)</option>
+                    <option value="luxury">Luxury (5 Star Hotels / Fine Dining / Private Cars)</option>
+                </select>
+            </div>
+            <button type="submit" style="background: var(--ink); color: #fff; border: none; padding: 12px; font-weight: 600; border-radius: 4px; cursor: pointer; font-family: var(--font-ui);">Calculate</button>
+        </form>
+
+        <div id="results" style="display: none; margin-top: var(--s-6); padding-top: var(--s-6); border-top: 1px solid #ccc;">
+            <h3 style="margin-top: 0;">Suggested Allocation</h3>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-4); margin-top: var(--s-4);">
+                <div style="background: #fff; padding: var(--s-4); border-radius: 6px; border: 1px solid var(--rule);">
+                    <div style="font-size: var(--t-sm); color: var(--ink-muted);">Max Hotel Spend (Per Night)</div>
+                    <div id="resHotel" style="font-size: var(--t-xl); font-weight: 700; color: var(--ink); font-family: var(--font-ui);">₹0</div>
+                </div>
+                <div style="background: #fff; padding: var(--s-4); border-radius: 6px; border: 1px solid var(--rule);">
+                    <div style="font-size: var(--t-sm); color: var(--ink-muted);">Daily Food & Local Travel</div>
+                    <div id="resDaily" style="font-size: var(--t-xl); font-weight: 700; color: var(--ink); font-family: var(--font-ui);">₹0</div>
+                </div>
+                <div style="grid-column: 1 / -1; background: #fff; padding: var(--s-4); border-radius: 6px; border: 1px solid var(--rule);">
+                    <div style="font-size: var(--t-sm); color: var(--ink-muted);">Flights & Intercity Transport Buffer (Total)</div>
+                    <div id="resTransport" style="font-size: var(--t-xl); font-weight: 700; color: var(--ink); font-family: var(--font-ui);">₹0</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+    function calculateBudget() {
+        const budget = parseFloat(document.getElementById('totalBudget').value);
+        const days = parseInt(document.getElementById('days').value);
+        const style = document.getElementById('style').value;
+        
+        let hotelPct, foodPct, transportPct;
+        
+        if (style === 'budget') {
+            hotelPct = 0.30;
+            foodPct = 0.40;
+            transportPct = 0.30;
+        } else if (style === 'luxury') {
+            hotelPct = 0.55;
+            foodPct = 0.25;
+            transportPct = 0.20;
+        } else {
+            hotelPct = 0.40;
+            foodPct = 0.35;
+            transportPct = 0.25;
+        }
+        
+        const totalHotel = budget * hotelPct;
+        const totalFood = budget * foodPct;
+        const transportBuffer = budget * transportPct;
+        
+        const perNightHotel = totalHotel / Math.max(1, (days - 1));
+        const dailyFood = totalFood / days;
+        
+        document.getElementById('resHotel').innerText = '₹' + Math.round(perNightHotel).toLocaleString('en-IN');
+        document.getElementById('resDaily').innerText = '₹' + Math.round(dailyFood).toLocaleString('en-IN');
+        document.getElementById('resTransport').innerText = '₹' + Math.round(transportBuffer).toLocaleString('en-IN');
+        
+        document.getElementById('results').style.display = 'block';
+    }
+    </script>
+  </main>
+
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Prime Hotel Picks</h4>
+        <p>Researched guides to where you actually stay in India. Rates, locations and trade-offs, checked and dated.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="credits.html">Photo credits</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Prime Hotel Picks</p>
+      <p>Hotel photographs are credited to their photographers on the <a href="credits.html">credits page</a>.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+  <div class="cookie-consent">
+    <div class="cookie-consent__inner">
+      <div class="cookie-consent__text">
+        This site uses cookies for basic analytics, and for advertising if you accept. Decline and no
+        advertising or analytics cookies are set. <a href="privacy.html">Read the privacy policy</a>.
+      </div>
+      <div class="cookie-consent__buttons">
+        <button class="cookie-consent__btn cookie-consent__btn--accept">Accept</button>
+        <button class="cookie-consent__btn cookie-consent__btn--decline">Decline</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

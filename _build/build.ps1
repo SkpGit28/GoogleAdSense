@@ -1,4 +1,4 @@
-# Builds articles/*.html, credits.html and sitemap.xml from _build/ sources.
+﻿# Builds articles/*.html, credits.html and sitemap.xml from _build/ sources.
 # Run:  powershell -File _build\build.ps1
 $ErrorActionPreference = "Stop"
 $root = Split-Path $PSScriptRoot -Parent
@@ -98,11 +98,11 @@ function Head($m, $depth) {
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "$site/" },
-      { "@type": "ListItem", "position": 2, "name": $(ConvertTo-Json $m.region) },
-      { "@type": "ListItem", "position": 3, "name": $(ConvertTo-Json $m.title), "item": "$canonical" }
+      { "@type": "ListItem", "position": 2, "name": $(ConvertTo-Json $m.title), "item": "$canonical" }
     ]
   }
   </script>$hotelLd
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6151386626480770" crossorigin="anonymous"></script>
 </head>
 "@
 }
@@ -119,6 +119,7 @@ function Header($up, $active) {
       <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">&#9776;</button>
       <nav class="nav" id="site-nav">
         <a href="${up}index.html"$(& $a 'home')>Home</a>
+        <a href="${up}tools.html"$(& $a 'tools')>Tools</a>
         <a href="${up}about.html"$(& $a 'about')>About</a>
         <a href="${up}contact.html"$(& $a 'contact')>Contact</a>
       </nav>
@@ -328,6 +329,7 @@ $credits = @"
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6151386626480770" crossorigin="anonymous"></script>
 </head>
 "@ + (Header "" "") + @"
 
@@ -378,6 +380,9 @@ Write-Host "Built credits.html ($($man.Count) images)" -ForegroundColor Green
 $today = "2026-07-27"
 $urls = @(
   @{ loc = "$site/";              pri = "1.0"; freq = "weekly" },
+  @{ loc = "$site/tools.html"; pri = "0.9"; freq = "monthly" },
+  @{ loc = "$site/budget-calculator.html"; pri = "0.8"; freq = "monthly" },
+  @{ loc = "$site/hotel-compare.html"; pri = "0.8"; freq = "monthly" },
   @{ loc = "$site/about.html";    pri = "0.6"; freq = "monthly" },
   @{ loc = "$site/contact.html";  pri = "0.4"; freq = "yearly" },
   @{ loc = "$site/credits.html";  pri = "0.3"; freq = "monthly" },
@@ -398,3 +403,7 @@ $sm += '</urlset>' + "`n"
 # no BOM: a BOM breaks XML parsing for some crawlers
 [System.IO.File]::WriteAllText("$root\sitemap.xml", $sm, (New-Object System.Text.UTF8Encoding $false))
 Write-Host "Built sitemap.xml ($($urls.Count) urls)" -ForegroundColor Green
+
+
+
+

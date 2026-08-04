@@ -10,4 +10,4 @@
 # The trailing value (f08c47fec0942fa0) is Google's certification authority ID
 # and is the same for every publisher. Only the pub- number changes.
 #
-# google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+google.com, pub-6151386626480770, DIRECT, f08c47fec0942fa0
