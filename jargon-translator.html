@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <meta name="description" content="Paste a hotel description and translate the deceptive marketing jargon into brutal honesty.">
+  <title>Hotel Jargon Translator - Prime Hotel Picks</title>
+  <link rel="canonical" href="https://primehotelpicks.com/budget-calculator.html">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+
+  
+  
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6151386626480770" crossorigin="anonymous"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="header">
+    <div class="header-top">
+      <a href="index.html" class="logo">Prime Hotel <span>Picks</span></a>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">&#9776;</button>
+      <nav class="nav" id="site-nav">
+        <a href="index.html">Home</a>
+        <a href="tools.html" >Tools</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  
+  
+  <div class="article-header">
+    <div class="article-header__inner">
+      <h1 class="marker">Hotel Jargon Translator</h1>
+      <div class="article-meta-bar">
+        <span>Interactive Tool</span>
+        <span class="badge badge--sourced">B.S. Detector</span>
+      </div>
+    </div>
+  </div>
+  <main id="main" class="legal-page">
+
+    <p>Booking sites are full of deceptive marketing speak. Paste a hotel's description below, and our B.S. Detector will highlight the jargon and translate it into what you will actually experience.</p>
+    
+    <div style="margin-top: var(--s-5);">
+        <textarea id="jargonInput" rows="6" placeholder="Paste the hotel description here (e.g. 'Enjoy our cozy, vibrant rooms located steps from the beach with a rustic heritage feel...')" style="width: 100%; padding: 16px; border: 1px solid var(--rule); border-radius: 8px; font-family: var(--font-ui); font-size: var(--t-md); resize: vertical; box-sizing: border-box;"></textarea>
+        
+        <div style="margin-top: var(--s-4); text-align: right;">
+            <button onclick="translateJargon()" style="background: var(--ink); color: #fff; border: none; padding: 12px 24px; font-size: var(--t-md); font-weight: 700; border-radius: 6px; cursor: pointer; font-family: var(--font-ui);">Detect Jargon</button>
+        </div>
+    </div>
+
+    <div id="jargonResults" style="margin-top: var(--s-6); display: none;">
+        <h3 style="border-bottom: 2px solid var(--ink); padding-bottom: 8px; margin-bottom: var(--s-4);">Honest Translation</h3>
+        <div id="jargonOutput" style="display: flex; flex-direction: column; gap: var(--s-3);"></div>
+    </div>
+
+    <script>
+    const jargonDict = [
+        { word: "cozy", truth: "Extremely small. You will likely bump your knees on the bed." },
+        { word: "vibrant", truth: "Loud. Usually means the hotel is above a nightclub, busy street, or active bar." },
+        { word: "rustic", truth: "Old and unrenovated. Expect creaky furniture and dated plumbing." },
+        { word: "steps from", truth: "Technically true, but those steps might involve crossing a dangerous 4-lane highway." },
+        { word: "partial sea view", truth: "You can see a sliver of water if you lean dangerously over the balcony railing." },
+        { word: "heritage feel", truth: "The building is very old, and so is the air conditioning." },
+        { word: "up and coming", truth: "Surrounded by active, noisy construction sites." },
+        { word: "tropical", truth: "Lots of mosquitoes and bugs. Do not leave your window open." },
+        { word: "bustling", truth: "Chaotic, crowded, and guaranteed traffic jams outside the lobby." },
+        { word: "intimate", truth: "Zero privacy. You will hear your neighbors whispering." }
+    ];
+
+    function translateJargon() {
+        const text = document.getElementById('jargonInput').value.toLowerCase();
+        const output = document.getElementById('jargonOutput');
+        output.innerHTML = '';
+        
+        let foundAny = false;
+
+        jargonDict.forEach(item => {
+            if (text.includes(item.word)) {
+                foundAny = true;
+                output.innerHTML += `
+                    <div style="background: var(--paper-sunk); border-left: 4px solid #d32f2f; padding: var(--s-4); border-radius: 4px;">
+                        <div style="color: #d32f2f; font-weight: bold; font-family: var(--font-ui); text-transform: uppercase; font-size: var(--t-xs); margin-bottom: 4px;">Detected: "${item.word}"</div>
+                        <div style="font-weight: 600; color: var(--ink);">${item.truth}</div>
+                    </div>
+                `;
+            }
+        });
+
+        if (!foundAny && text.trim().length > 0) {
+            output.innerHTML = '<div style="background: #e8f5e9; border-left: 4px solid #2e7d32; padding: var(--s-4); border-radius: 4px; font-weight: 600;">No standard BS keywords detected! But still read the bulk 1-star reviews to be safe.</div>';
+        } else if (text.trim().length === 0) {
+            output.innerHTML = '<div style="color: var(--ink-muted);">Please paste some text first.</div>';
+        }
+
+        document.getElementById('jargonResults').style.display = 'block';
+    }
+    </script>
+
+  </main>
+
+
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Prime Hotel Picks</h4>
+        <p>Researched guides to where you actually stay in India. Rates, locations and trade-offs, checked and dated.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="credits.html">Photo credits</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Prime Hotel Picks</p>
+      <p>Hotel photographs are credited to their photographers on the <a href="credits.html">credits page</a>.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+  <div class="cookie-consent">
+    <div class="cookie-consent__inner">
+      <div class="cookie-consent__text">
+        This site uses cookies for basic analytics, and for advertising if you accept. Decline and no
+        advertising or analytics cookies are set. <a href="privacy.html">Read the privacy policy</a>.
+      </div>
+      <div class="cookie-consent__buttons">
+        <button class="cookie-consent__btn cookie-consent__btn--accept">Accept</button>
+        <button class="cookie-consent__btn cookie-consent__btn--decline">Decline</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

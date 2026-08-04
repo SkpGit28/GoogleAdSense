@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <meta name="description" content="Check if your travel dates collide with local monsoons or peak wedding seasons that inflate rates.">
+  <title>Monsoon & Wedding Price Inflator - Prime Hotel Picks</title>
+  <link rel="canonical" href="https://primehotelpicks.com/budget-calculator.html">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+
+  
+  
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6151386626480770" crossorigin="anonymous"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="header">
+    <div class="header-top">
+      <a href="index.html" class="logo">Prime Hotel <span>Picks</span></a>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">&#9776;</button>
+      <nav class="nav" id="site-nav">
+        <a href="index.html">Home</a>
+        <a href="tools.html" >Tools</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  
+  
+  <div class="article-header">
+    <div class="article-header__inner">
+      <h1 class="marker">Monsoon & Wedding Price Matrix</h1>
+      <div class="article-meta-bar">
+        <span>Interactive Tool</span>
+        <span class="badge badge--sourced">Live Analysis</span>
+      </div>
+    </div>
+  </div>
+  <main id="main" class="legal-page">
+
+    <p>Indian hotel prices are heavily manipulated by local wedding dates, regional festivals, and monsoons. Select your destination and month to see if you are stepping into a pricing trap.</p>
+    
+    <div style="background: var(--paper-sunk); padding: var(--s-5); border: 1px solid var(--rule); border-radius: 8px; margin-top: var(--s-5); display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-4);">
+        <div>
+            <label style="display:block; font-weight: 600; margin-bottom: 8px;">Region</label>
+            <select id="infRegion" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-family: var(--font-ui);">
+                <option value="Rajasthan">Rajasthan (Jaipur, Udaipur, Jodhpur)</option>
+                <option value="Goa">Goa</option>
+                <option value="Kerala">Kerala (Backwaters, Munnar)</option>
+                <option value="Himachal">Himachal Pradesh (Shimla, Manali)</option>
+            </select>
+        </div>
+        <div>
+            <label style="display:block; font-weight: 600; margin-bottom: 8px;">Month of Travel</label>
+            <select id="infMonth" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-family: var(--font-ui);">
+                <option value="Jan">January</option>
+                <option value="May">May</option>
+                <option value="Jul">July</option>
+                <option value="Nov">November</option>
+                <option value="Dec">December</option>
+            </select>
+        </div>
+        <div style="grid-column: 1 / -1; margin-top: var(--s-3);">
+            <button onclick="checkMatrix()" style="width: 100%; background: var(--ink); color: #fff; border: none; padding: 14px; font-size: var(--t-md); font-weight: 700; border-radius: 6px; cursor: pointer; font-family: var(--font-ui);">Analyze Risk</button>
+        </div>
+    </div>
+
+    <div id="infResults" style="margin-top: var(--s-6); display: none; padding: var(--s-5); border-radius: 8px;">
+        <div style="font-size: var(--t-xs); font-family: var(--font-ui); text-transform: uppercase; font-weight: bold; letter-spacing: 1px; margin-bottom: 8px;" id="infBadge">Status</div>
+        <h2 id="infTitle" style="margin-top: 0; margin-bottom: var(--s-3);">Title</h2>
+        <p id="infDesc" style="font-size: var(--t-md); margin-bottom: 0;"></p>
+    </div>
+
+    <script>
+    function checkMatrix() {
+        const region = document.getElementById('infRegion').value;
+        const month = document.getElementById('infMonth').value;
+        const res = document.getElementById('infResults');
+        const badge = document.getElementById('infBadge');
+        const title = document.getElementById('infTitle');
+        const desc = document.getElementById('infDesc');
+        
+        res.style.display = 'block';
+        
+        let danger = "Low Risk";
+        let color = "#2e7d32";
+        let bg = "#e8f5e9";
+        let t = "";
+        let d = "";
+
+        if (region === "Rajasthan" && (month === "Nov" || month === "Dec" || month === "Jan")) {
+            danger = "Extreme Danger"; color = "#c62828"; bg = "#ffebee";
+            t = "Peak Wedding & Tourist Season";
+            d = "Rates are inflated by up to 300%. Expect loud Baraat (wedding) processions late into the night at major heritage hotels, making sleep difficult.";
+        } else if (region === "Rajasthan" && month === "May") {
+            danger = "Heat Warning"; color = "#e65100"; bg = "#fff3e0";
+            t = "Severe Summer Heat";
+            d = "Rates are very cheap, but temperatures exceed 40°C. Sightseeing is impossible during the day.";
+        } else if (region === "Goa" && (month === "Dec" || month === "Jan")) {
+            danger = "Extreme Danger"; color = "#c62828"; bg = "#ffebee";
+            t = "Peak Holiday Surge";
+            d = "Every resort enforces mandatory 'Gala Dinner' charges (₹5k-₹15k per person). Taxis and flights are at their absolute most expensive.";
+        } else if (region === "Goa" && month === "Jul") {
+            danger = "Weather Warning"; color = "#1565c0"; bg = "#e3f2fd";
+            t = "Heavy Monsoons";
+            d = "Rates drop significantly, but many beach shacks are dismantled and swimming is strictly prohibited due to dangerous currents.";
+        } else if (region === "Kerala" && month === "Jul") {
+            danger = "Weather Warning"; color = "#1565c0"; bg = "#e3f2fd";
+            t = "Active Monsoons";
+            d = "Houseboat experiences are miserable in heavy rain. Leech and mosquito populations spike at nature resorts.";
+        } else if (region === "Himachal" && month === "May") {
+            danger = "High Risk"; color = "#e65100"; bg = "#fff3e0";
+            t = "Summer Vacation Chaos";
+            d = "Massive influx of domestic tourists escaping the heat. Expect 3-hour traffic jams just to cross Shimla or Manali.";
+        } else if (region === "Himachal" && month === "Jan") {
+            danger = "Variable Risk"; color = "#1565c0"; bg = "#e3f2fd";
+            t = "Snow Risk";
+            d = "Beautiful views, but many budget hotels lack central heating. Roads frequently close due to snow, trapping you in your hotel.";
+        } else {
+            danger = "Sweet Spot"; color = "#2e7d32"; bg = "#e8f5e9";
+            t = "Good Value Window";
+            d = "You have selected a shoulder season or off-peak window with acceptable weather. Hotel rates should be negotiable and crowds minimal.";
+        }
+
+        res.style.backgroundColor = bg;
+        res.style.border = `1px solid ${color}`;
+        badge.style.color = color;
+        badge.innerText = danger;
+        title.innerText = t;
+        title.style.color = color;
+        desc.innerText = d;
+    }
+    </script>
+
+  </main>
+
+
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Prime Hotel Picks</h4>
+        <p>Researched guides to where you actually stay in India. Rates, locations and trade-offs, checked and dated.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="credits.html">Photo credits</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Prime Hotel Picks</p>
+      <p>Hotel photographs are credited to their photographers on the <a href="credits.html">credits page</a>.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+  <div class="cookie-consent">
+    <div class="cookie-consent__inner">
+      <div class="cookie-consent__text">
+        This site uses cookies for basic analytics, and for advertising if you accept. Decline and no
+        advertising or analytics cookies are set. <a href="privacy.html">Read the privacy policy</a>.
+      </div>
+      <div class="cookie-consent__buttons">
+        <button class="cookie-consent__btn cookie-consent__btn--accept">Accept</button>
+        <button class="cookie-consent__btn cookie-consent__btn--decline">Decline</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

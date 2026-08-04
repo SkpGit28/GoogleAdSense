@@ -381,6 +381,9 @@ $today = "2026-07-27"
 $urls = @(
   @{ loc = "$site/";              pri = "1.0"; freq = "weekly" },
   @{ loc = "$site/tools.html"; pri = "0.9"; freq = "monthly" },
+  @{ loc = "$site/jargon-translator.html"; pri = "0.8"; freq = "monthly" },
+  @{ loc = "$site/price-inflator.html"; pri = "0.8"; freq = "monthly" },
+  @{ loc = "$site/dealbreaker-quiz.html"; pri = "0.8"; freq = "monthly" },
   @{ loc = "$site/budget-calculator.html"; pri = "0.8"; freq = "monthly" },
   @{ loc = "$site/hotel-compare.html"; pri = "0.8"; freq = "monthly" },
   @{ loc = "$site/about.html";    pri = "0.6"; freq = "monthly" },
@@ -403,6 +406,7 @@ $sm += '</urlset>' + "`n"
 # no BOM: a BOM breaks XML parsing for some crawlers
 [System.IO.File]::WriteAllText("$root\sitemap.xml", $sm, (New-Object System.Text.UTF8Encoding $false))
 Write-Host "Built sitemap.xml ($($urls.Count) urls)" -ForegroundColor Green
+
 
 
 
