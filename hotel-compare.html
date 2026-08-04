@@ -23,6 +23,13 @@
       100% { transform: rotate(360deg); }
     }
   </style>
+
+  <style>
+    @media (max-width: 768px) {
+      .responsive-grid { grid-template-columns: 1fr !important; }
+      .table-wrapper { overflow-x: auto !important; }
+    }
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -57,7 +64,7 @@
 
     <div style="background: var(--paper); padding: var(--s-6); border-radius: 8px; border: 1px solid var(--rule); margin-top: var(--s-6); box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
         
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-6); align-items: start;">
+        <div class="responsive-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-6); align-items: start;">
             
             <!-- Hotel A Column -->
             <div style="background: var(--paper-sunk); padding: var(--s-4); border: 1px solid var(--rule); border-radius: 6px;">
@@ -123,10 +130,10 @@
 
         <!-- Results Section -->
 
-        <div style="margin-top: var(--s-6); border: 2px solid var(--ink); border-radius: 8px; overflow: hidden;">
+        <div style="margin-top: var(--s-6); border: 2px solid var(--ink); border-radius: 8px; overflow-x: auto; overflow-y: hidden; -webkit-overflow-scrolling: touch;" class="table-wrapper">
             <div style="background: var(--ink); color: #fff; padding: 12px var(--s-4); font-weight: bold; font-family: var(--font-ui);">True Cost Breakdown</div>
             
-            <table style="width: 100%; border-collapse: collapse; text-align: left; font-family: var(--font-ui);">
+            <table style="width: 100%; min-width: 500px; border-collapse: collapse; text-align: left; font-family: var(--font-ui);">
                 <thead>
                     <tr style="background: var(--paper-sunk); border-bottom: 1px solid var(--rule);">
                         <th style="padding: 12px var(--s-4);">Metric</th>

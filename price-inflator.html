@@ -18,6 +18,13 @@
   
   
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6151386626480770" crossorigin="anonymous"></script>
+
+  <style>
+    @media (max-width: 768px) {
+      .responsive-grid { grid-template-columns: 1fr !important; }
+      .table-wrapper { overflow-x: auto !important; }
+    }
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -50,7 +57,7 @@
 
     <p>Indian hotel prices are heavily manipulated by local wedding dates, regional festivals, and monsoons. Select your destination and month to see if you are stepping into a pricing trap.</p>
     
-    <div style="background: var(--paper-sunk); padding: var(--s-5); border: 1px solid var(--rule); border-radius: 8px; margin-top: var(--s-5); display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-4);">
+    <div class="responsive-grid" style="background: var(--paper-sunk); padding: var(--s-5); border: 1px solid var(--rule); border-radius: 8px; margin-top: var(--s-5); display: grid; grid-template-columns: 1fr 1fr;" class="responsive-grid gap: var(--s-4);">
         <div>
             <label style="display:block; font-weight: 600; margin-bottom: 8px;">Region</label>
             <select id="infRegion" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-family: var(--font-ui);">

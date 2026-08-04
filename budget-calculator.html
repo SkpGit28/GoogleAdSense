@@ -18,6 +18,13 @@
   
   
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6151386626480770" crossorigin="anonymous"></script>
+
+  <style>
+    @media (max-width: 768px) {
+      .responsive-grid { grid-template-columns: 1fr !important; }
+      .table-wrapper { overflow-x: auto !important; }
+    }
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -72,7 +79,7 @@
 
         <div id="results" style="display: none; margin-top: var(--s-6); padding-top: var(--s-6); border-top: 1px solid #ccc;">
             <h3 style="margin-top: 0;">Suggested Allocation</h3>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-4); margin-top: var(--s-4);">
+            <div class="responsive-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-4); margin-top: var(--s-4);">
                 <div style="background: #fff; padding: var(--s-4); border-radius: 6px; border: 1px solid var(--rule);">
                     <div style="font-size: var(--t-sm); color: var(--ink-muted);">Max Hotel Spend (Per Night)</div>
                     <div id="resHotel" style="font-size: var(--t-xl); font-weight: 700; color: var(--ink); font-family: var(--font-ui);">₹0</div>
