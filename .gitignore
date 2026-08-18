@@ -1,3 +1,19 @@
-﻿_build/
+# What git tracks. This is NOT the same question as what gets deployed --
+# that is .vercelignore, which excludes _build/ and *.py from the site.
+#
+# _build/ is deliberately NOT listed here. Despite the name it holds source,
+# not output: the 20 article bodies, articles.json, the image manifest and
+# build.ps1. The generated output is articles/. Losing _build/ would mean
+# losing the writing and the ability to rebuild the site, so it belongs in
+# version control even though it must never be served.
+
+# One-off patch scripts (fix_*.py, update_*.py) that have already been applied.
+# Remove this line if you want them kept.
 *.py
 
+# Local scratch and tooling.
+.DS_Store
+Thumbs.db
+*.log
+.vercel/
+.mimocode/
