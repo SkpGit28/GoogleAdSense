@@ -13,6 +13,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+  <script>
+  /* Must run before the AdSense script below. Declining (or ignoring the
+     banner) leaves ads non-personalised; only an explicit Accept turns
+     personalisation on. Changing the choice reloads the page so this re-runs. */
+  (function () {
+    var ok = false;
+    try { ok = localStorage.getItem('cookieConsent') === 'accepted'; } catch (e) {}
+    (window.adsbygoogle = window.adsbygoogle || []).requestNonPersonalizedAds = ok ? 0 : 1;
+  })();
+  </script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6151386626480770" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -24,6 +34,7 @@
       <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">&#9776;</button>
       <nav class="nav" id="site-nav">
         <a href="index.html">Home</a>
+        <a href="articles/index.html">Guides</a>
         <a href="tools.html">Tools</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
@@ -137,20 +148,22 @@
   <footer class="footer">
     <div class="footer-grid">
       <div class="footer-col">
-        <h4>Prime Hotel Picks</h4>
+        <h2>Prime Hotel Picks</h2>
         <p>Researched guides to where you actually stay in India. Rates, locations and trade-offs, checked and dated.</p>
       </div>
       <div class="footer-col">
-        <h4>Site</h4>
+        <h2>Site</h2>
         <ul>
           <li><a href="index.html">Home</a></li>
+          <li><a href="articles/index.html">All guides</a></li>
+          <li><a href="tools.html">Tools</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="credits.html">Photo credits</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Legal</h4>
+        <h2>Legal</h2>
         <ul>
           <li><a href="privacy.html">Privacy Policy</a></li>
           <li><a href="terms.html">Terms of Service</a></li>
@@ -169,8 +182,8 @@
   <div class="cookie-consent">
     <div class="cookie-consent__inner">
       <div class="cookie-consent__text">
-        This site uses cookies for basic analytics, and for advertising if you accept. Decline and no
-        advertising or analytics cookies are set. <a href="privacy.html">Read the privacy policy</a>.
+        This site shows advertising from Google. Accept and you will see personalised ads. Decline,
+        or ignore this, and ads stay non-personalised. <a href="privacy.html">Read the privacy policy</a>.
       </div>
       <div class="cookie-consent__buttons">
         <button class="cookie-consent__btn cookie-consent__btn--accept">Accept</button>

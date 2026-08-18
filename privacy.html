@@ -13,6 +13,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+  <script>
+  /* Must run before the AdSense script below. Declining (or ignoring the
+     banner) leaves ads non-personalised; only an explicit Accept turns
+     personalisation on. Changing the choice reloads the page so this re-runs. */
+  (function () {
+    var ok = false;
+    try { ok = localStorage.getItem('cookieConsent') === 'accepted'; } catch (e) {}
+    (window.adsbygoogle = window.adsbygoogle || []).requestNonPersonalizedAds = ok ? 0 : 1;
+  })();
+  </script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6151386626480770" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -24,6 +34,7 @@
       <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">&#9776;</button>
       <nav class="nav" id="site-nav">
         <a href="index.html">Home</a>
+        <a href="articles/index.html">Guides</a>
         <a href="tools.html">Tools</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
@@ -53,37 +64,50 @@
       <li>If you email me, I keep the email so I can reply.</li>
     </ul>
 
-    <h2>Advertising: current status</h2>
+    <h2>Advertising</h2>
 
-    <p>This site is intended to carry Google AdSense display advertising. As at the date at the
-      top of this page, AdSense has not yet been approved for the site and no advertising code is
-      being served. The section below describes what will happen once it is active, so that the
-      position is clear in advance.</p>
+    <p>This site carries Google AdSense display advertising. The AdSense script
+      is loaded by every page on this site, on every visit, before you interact
+      with the cookie banner. That is stated plainly because an earlier version
+      of this policy claimed the opposite, and it was wrong.</p>
 
-    <p>When advertising is enabled, the ad script is only loaded after you press Accept on the
-      cookie banner. If you press Decline, or ignore the banner, the advertising script is never
-      requested and no advertising cookies are set. This is enforced in the site's own code
-      rather than being a promise in a policy.</p>
+    <p>What your answer to the banner does control is <strong>personalisation</strong>.
+      The site reads your stored choice before the ad script runs:</p>
 
-    <p>Once active, Google and its partners may use cookies to serve ads based on your prior
-      visits to this and other websites. You can opt out of personalised advertising at any time
-      through <a href="https://www.google.com/settings/ads" rel="nofollow noopener">Google's Ads
-      Settings</a>, and you can review how Google handles data from partner sites at
-      <a href="https://policies.google.com/technologies/partner-sites" rel="nofollow noopener">
-      policies.google.com/technologies/partner-sites</a>. Third-party vendors may also be opted
-      out of via <a href="https://www.aboutads.info/choices/" rel="nofollow noopener">aboutads.info</a>.</p>
+    <ul>
+      <li><strong>Decline, or ignore the banner:</strong> ads are requested as
+        non-personalised. Google is told not to use your prior browsing to
+        select them. This is the default, so doing nothing is the private
+        option.</li>
+      <li><strong>Accept:</strong> ads are requested as personalised, and Google
+        and its partners may use cookies based on your prior visits to this and
+        other sites.</li>
+    </ul>
+
+    <p>Changing your mind reloads the page, because the setting is applied
+      before the ad script starts and cannot be changed part-way through a page
+      view. You can also opt out of personalised advertising for every site at
+      once through <a href="https://adssettings.google.com/" rel="nofollow noopener">Google's Ads Settings</a>,
+      and you can read how Google handles data from partner sites at
+      <a href="https://policies.google.com/technologies/partner-sites" rel="nofollow noopener">policies.google.com/technologies/partner-sites</a>.</p>
+
+    <p>Non-personalised does not mean cookie-free. Google may still set cookies
+      for frequency capping, aggregate reporting and fraud prevention. If you
+      want none of it, block third-party cookies for this site in your browser
+      or use a content blocker; nothing here will try to defeat that.</p>
 
     <h2>Cookies and local storage</h2>
 
-    <p>The site stores one item in your browser's local storage: your answer to the cookie
-      banner, recorded as either accepted or declined. That is what stops the banner reappearing
-      on every page. It contains no identifier and is readable only by this site.</p>
+    <p>This site itself stores one item in your browser's local storage: your
+      answer to the cookie banner, recorded as either <code>accepted</code> or
+      <code>declined</code>. That is what stops the banner reappearing on every
+      page, and what the ad-personalisation setting is read from. It contains no
+      identifier and is readable only by this site.</p>
 
-    <p>If you accept, advertising cookies set by Google may then be placed by the ad script.
-      Those are described in Google's own policies linked above.</p>
-
-    <p>You can clear this at any time by clearing site data for primehotelpicks.com in your
-      browser, which will make the banner appear again on your next visit.</p>
+    <p>Cookies set by Google's advertising script are described in Google's own
+      policies, linked above. Clearing site data for primehotelpicks.com in your
+      browser removes the stored answer, and the banner will appear again on
+      your next visit.</p>
 
     <h2>Server logs</h2>
 
@@ -150,20 +174,22 @@
   <footer class="footer">
     <div class="footer-grid">
       <div class="footer-col">
-        <h4>Prime Hotel Picks</h4>
+        <h2>Prime Hotel Picks</h2>
         <p>Researched guides to where you actually stay in India. Rates, locations and trade-offs, checked and dated.</p>
       </div>
       <div class="footer-col">
-        <h4>Site</h4>
+        <h2>Site</h2>
         <ul>
           <li><a href="index.html">Home</a></li>
+          <li><a href="articles/index.html">All guides</a></li>
+          <li><a href="tools.html">Tools</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="credits.html">Photo credits</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Legal</h4>
+        <h2>Legal</h2>
         <ul>
           <li><a href="privacy.html">Privacy Policy</a></li>
           <li><a href="terms.html">Terms of Service</a></li>
@@ -182,8 +208,8 @@
   <div class="cookie-consent">
     <div class="cookie-consent__inner">
       <div class="cookie-consent__text">
-        This site uses cookies for basic analytics, and for advertising if you accept. Decline and no
-        advertising or analytics cookies are set. <a href="privacy.html">Read the privacy policy</a>.
+        This site shows advertising from Google. Accept and you will see personalised ads. Decline,
+        or ignore this, and ads stay non-personalised. <a href="privacy.html">Read the privacy policy</a>.
       </div>
       <div class="cookie-consent__buttons">
         <button class="cookie-consent__btn cookie-consent__btn--accept">Accept</button>

@@ -57,6 +57,16 @@
     "publisher": { "@id": "https://primehotelpicks.com/#organization" }
   }
   </script>
+  <script>
+  /* Must run before the AdSense script below. Declining (or ignoring the
+     banner) leaves ads non-personalised; only an explicit Accept turns
+     personalisation on. Changing the choice reloads the page so this re-runs. */
+  (function () {
+    var ok = false;
+    try { ok = localStorage.getItem('cookieConsent') === 'accepted'; } catch (e) {}
+    (window.adsbygoogle = window.adsbygoogle || []).requestNonPersonalizedAds = ok ? 0 : 1;
+  })();
+  </script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6151386626480770" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -68,6 +78,7 @@
       <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">&#9776;</button>
       <nav class="nav" id="site-nav">
         <a href="index.html" class="active">Home</a>
+        <a href="articles/index.html">Guides</a>
         <a href="tools.html">Tools</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
@@ -226,7 +237,7 @@
       </li>
 
       <li class="index-row">
-        <img class="index-row__thumb" src="images/hotels/aman-i-khas-800.jpg" alt="" width="96" height="64" loading="lazy">
+        <img class="index-row__thumb" src="images/hotels/oberoi-vanyavilas-800.jpg" alt="" width="96" height="64" loading="lazy">
         <div class="index-row__body">
           <h3 class="index-row__title"><a href="articles/wildlife-lodges-ranthambore.html">Ranthambore wildlife lodges: luxury tents, zones and safari booking reality</a></h3>
           <p class="index-row__desc">Aman-i-Khas and Oberoi Vanyavilas against the reality of forest zone permit caps. Tented luxury and safari permit planning.</p>
@@ -298,7 +309,7 @@
       </li>
 
       <li class="index-row">
-        <img class="index-row__thumb" src="images/hotels/taj-swarna-amritsar-800.jpg" alt="" width="96" height="64" loading="lazy">
+        <img class="index-row__thumb" src="images/hotels/hyatt-amritsar-800.jpg" alt="" width="96" height="64" loading="lazy">
         <div class="index-row__body">
           <h3 class="index-row__title"><a href="articles/amritsar-hotels-golden-temple.html">Amritsar hotels: how close to the Golden Temple do you need to be</a></h3>
           <p class="index-row__desc">Heritage Street stays walking distance to Sri Harmandir Sahib against Taj Swarna on the outer ring road and free pilgrim sarais.</p>
@@ -310,7 +321,7 @@
       </li>
 
       <li class="index-row">
-        <img class="index-row__thumb" src="images/hotels/varanasi-ghats-800.jpg" alt="" width="96" height="64" loading="lazy">
+        <img class="index-row__thumb" src="images/hotels/zostel-delhi-800.jpg" alt="" width="96" height="64" loading="lazy">
         <div class="index-row__body">
           <h3 class="index-row__title"><a href="articles/budget-hostels-india.html">Budget hostels in India: what Rs 700 a night actually gets you</a></h3>
           <p class="index-row__desc">The hostel chains, what to check before booking a dorm in India, and where the cheap end genuinely works.</p>
@@ -322,7 +333,7 @@
       </li>
 
       <li class="index-row">
-        <img class="index-row__thumb" src="images/hotels/spice-village-thekkady-800.jpg" alt="" width="96" height="64" loading="lazy">
+        <img class="index-row__thumb" src="images/hotels/diphlu-river-lodge-800.jpg" alt="" width="96" height="64" loading="lazy">
         <div class="index-row__body">
           <h3 class="index-row__title"><a href="articles/eco-stays-india.html">Eco stays in India: separating real practice from green paint</a></h3>
           <p class="index-row__desc">Spice Village in Thekkady, Kaziranga bamboo lodges and how to check whether a property's sustainability claims mean anything.</p>
@@ -342,7 +353,7 @@
 
     <div class="container">
       <div class="highlight-box" style="max-width:70ch;">
-        <h4>The short version</h4>
+        <h3>The short version</h3>
         <ul>
           <li>One writer, <a href="about.html">Sushant Kumar</a>, named on every guide. No invented co-authors.</li>
           <li>Rates are ranges in rupees, each stamped with the month checked. They move, so check before booking.</li>
@@ -357,20 +368,22 @@
   <footer class="footer">
     <div class="footer-grid">
       <div class="footer-col">
-        <h4>Prime Hotel Picks</h4>
+        <h2>Prime Hotel Picks</h2>
         <p>Researched guides to where you actually stay in India. Rates, locations and trade-offs, checked and dated.</p>
       </div>
       <div class="footer-col">
-        <h4>Site</h4>
+        <h2>Site</h2>
         <ul>
           <li><a href="index.html">Home</a></li>
+          <li><a href="articles/index.html">All guides</a></li>
+          <li><a href="tools.html">Tools</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="credits.html">Photo credits</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Legal</h4>
+        <h2>Legal</h2>
         <ul>
           <li><a href="privacy.html">Privacy Policy</a></li>
           <li><a href="terms.html">Terms of Service</a></li>
@@ -378,7 +391,7 @@
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Regions</h4>
+        <h2>Regions</h2>
         <ul>
           <li><a href="articles/rajasthan-palace-hotels.html">Rajasthan</a></li>
           <li><a href="articles/heritage-hotels-mumbai.html">Maharashtra</a></li>
@@ -398,8 +411,8 @@
   <div class="cookie-consent">
     <div class="cookie-consent__inner">
       <div class="cookie-consent__text">
-        This site uses cookies for basic analytics, and for advertising if you accept. Decline and no
-        advertising or analytics cookies are set. <a href="privacy.html">Read the privacy policy</a>.
+        This site shows advertising from Google. Accept and you will see personalised ads. Decline,
+        or ignore this, and ads stay non-personalised. <a href="privacy.html">Read the privacy policy</a>.
       </div>
       <div class="cookie-consent__buttons">
         <button class="cookie-consent__btn cookie-consent__btn--accept">Accept</button>

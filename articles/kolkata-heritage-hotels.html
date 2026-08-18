@@ -63,20 +63,42 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Hotel",
-    "name": "The Oberoi Grand",
-    "address": { "@type": "PostalAddress", "streetAddress": "15 Jawaharlal Nehru Road", "addressLocality": "Kolkata", "addressRegion": "West Bengal", "addressCountry": "IN" },
-    "priceRange": "Rs 14,000-Rs 60,000"
+    "@type": "ItemList",
+    "name": "Properties covered in: Kolkata Heritage Hotels: Is The Oberoi Grand Still the Best?",
+    "itemListOrder": "https://schema.org/ItemListOrderAscending",
+    "numberOfItems": 2,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "Hotel",
+          "name": "The Oberoi Grand",
+          "address": { "@type": "PostalAddress", "streetAddress": "15 Jawaharlal Nehru Road", "addressLocality": "Kolkata", "addressRegion": "West Bengal", "addressCountry": "IN" },
+          "priceRange": "Rs 14,000-Rs 60,000"
+        }
+      },      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "Hotel",
+          "name": "ITC Royal Bengal",
+          "address": { "@type": "PostalAddress", "streetAddress": "JBS Haldane Avenue", "addressLocality": "Kolkata", "addressRegion": "West Bengal", "addressCountry": "IN" },
+          "priceRange": "Rs 11,000-Rs 50,000"
+        }
+      }
+    ]
   }
   </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Hotel",
-    "name": "ITC Royal Bengal",
-    "address": { "@type": "PostalAddress", "streetAddress": "JBS Haldane Avenue", "addressLocality": "Kolkata", "addressRegion": "West Bengal", "addressCountry": "IN" },
-    "priceRange": "Rs 11,000-Rs 50,000"
-  }
+  <script>
+  /* Must run before the AdSense script below. Declining (or ignoring the
+     banner) leaves ads non-personalised; only an explicit Accept turns
+     personalisation on. Changing the choice reloads the page so this re-runs. */
+  (function () {
+    var ok = false;
+    try { ok = localStorage.getItem('cookieConsent') === 'accepted'; } catch (e) {}
+    (window.adsbygoogle = window.adsbygoogle || []).requestNonPersonalizedAds = ok ? 0 : 1;
+  })();
   </script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6151386626480770" crossorigin="anonymous"></script>
 </head><body>
@@ -88,6 +110,7 @@
       <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">&#9776;</button>
       <nav class="nav" id="site-nav">
         <a href="../index.html">Home</a>
+        <a href="index.html">Guides</a>
         <a href="../tools.html">Tools</a>
         <a href="../about.html">About</a>
         <a href="../contact.html">Contact</a>
@@ -130,7 +153,7 @@
 
       <div class="methodology-box">
         <div class="methodology-box__header">
-          <h4>How these hotels were researched</h4>
+          <h2>How these hotels were researched</h2>
           <span class="methodology-box__toggle">&#9660;</span>
         </div>
         <div class="methodology-box__content">
@@ -185,14 +208,14 @@
 
         <div class="pros-cons">
           <div class="pros-cons__section pros--section">
-            <h5>In its favour</h5>
+            <h3>In its favour</h3>
             <ul class="pros-cons__list">
               <li>Quiet inner courtyard pool sanctuary right off bustling market streets</li>
               <li>Superb central location adjacent to Esplanade Metro station</li>
             </ul>
           </div>
           <div class="pros-cons__section cons--section">
-            <h5>Worth knowing first</h5>
+            <h3>Worth knowing first</h3>
             <ul class="pros-cons__list">
               <li>Crowded sidewalk hawkers and traffic immediately outside front gates</li>
               <li>Standard entry rooms are cozy rather than massive</li>
@@ -235,7 +258,7 @@
 
         <div class="pros-cons">
           <div class="pros-cons__section pros--section">
-            <h5>In its favour</h5>
+            <h3>In its favour</h3>
             <ul class="pros-cons__list">
               <li>Exceptionally large guest rooms with modern high-tech controls</li>
               <li>Multiple fine-dining options on site</li>
@@ -243,7 +266,7 @@
             </ul>
           </div>
           <div class="pros-cons__section cons--section">
-            <h5>Worth knowing first</h5>
+            <h3>Worth knowing first</h3>
             <ul class="pros-cons__list">
               <li>Located along busy expressway away from central heritage walking zones</li>
               <li>EM Bypass traffic jams during morning and evening rush hours</li>
@@ -263,7 +286,7 @@
 
         <figure class="article-image">
           <img src="../images/hotels/kolkata-park-street-800.jpg" alt="Historic tombs and tree canopy inside South Park Street Cemetery Kolkata" width="800" height="533" loading="lazy">
-          <figcaption>Historic tombs inside the South Park Street Cemetery, representing the heritage neighborhood near Park Street rather than a modern hotel. Photo: Tathagataa, <a href="https://creativecommons.org/licenses/by-sa/4.0" rel="nofollow noopener">CC BY-SA 4.0</a>, via Wikimedia Commons.</figcaption>
+          <figcaption>South Park Street Cemetery, off Park Street. The stays in this section are in the surrounding blocks. Photo: Tathagataa, <a href="https://creativecommons.org/licenses/by-sa/4.0" rel="nofollow noopener">CC BY-SA 4.0</a>, via Wikimedia Commons.</figcaption>
         </figure>
 
         <p><strong>This is the area to skip: New Town Rajarhat high-rises for sightseers.</strong> Staying in distant Rajarhat software parks because hotel rates look Rs 2,000 cheaper will ruin a Kolkata trip. You will spend half your waking hours stuck behind trucks on the airport flyover.</p>
@@ -301,7 +324,7 @@
       <p>Interested in comparing India's classic port city hotels? Read our <a href="heritage-hotels-mumbai.html">Mumbai harbour hotels guide</a> or explore Bengal hill country in our <a href="darjeeling-tea-estate-stays.html">Darjeeling tea estate bungalow review</a>.</p>
 
       <div class="highlight-box">
-        <h4>Practical Kolkata travel notes</h4>
+        <h3>Practical Kolkata travel notes</h3>
         <ul>
           <li>Kolkata Metro is clean, fast, and inexpensive. The North-South line connects Dum Dum to Kavi Subhash, linking major sights from Kalighat to Sovabazar.</li>
           <li>Netaji Subhash Chandra Bose International Airport (CCU) in Dum Dum is located roughly 16 km north of Park Street, taking 45 minutes by taxi via EM Bypass.</li>
@@ -326,32 +349,34 @@
       <div class="sidebar-widget">
         <h3>Destinations</h3>
         <ul>
-          <li><a href="ladakh-hotels-leh.html">Ladakh</a></li>
-          <li><a href="kerala-backwater-resorts.html">Kerala</a></li>
+          <li><a href="heritage-hotels-mumbai.html">Mumbai</a></li>
+          <li><a href="bengaluru-business-hotels.html">Bengaluru</a></li>
           <li><a href="hyderabad-luxury-hotels.html">Hyderabad</a></li>
-          <li><a href="best-hotels-new-delhi.html">New Delhi</a></li>
-          <li><a href="beach-resorts-goa.html">Goa</a></li>
-          <li><a href="himachal-hill-station-hotels.html">Himachal</a></li>
+          <li><a href="rajasthan-palace-hotels.html">Rajasthan</a></li>
+          <li><a href="best-hotels-udaipur.html">Udaipur</a></li>
+          <li><a href="wildlife-lodges-ranthambore.html">Ranthambore</a></li>
         </ul>
       </div>
     </aside>  </div>
   <footer class="footer">
     <div class="footer-grid">
       <div class="footer-col">
-        <h4>Prime Hotel Picks</h4>
+        <h2>Prime Hotel Picks</h2>
         <p>Researched guides to where you actually stay in India. Rates, locations and trade-offs, checked and dated.</p>
       </div>
       <div class="footer-col">
-        <h4>Site</h4>
+        <h2>Site</h2>
         <ul>
           <li><a href="../index.html">Home</a></li>
+          <li><a href="index.html">All guides</a></li>
+          <li><a href="../tools.html">Tools</a></li>
           <li><a href="../about.html">About</a></li>
           <li><a href="../contact.html">Contact</a></li>
           <li><a href="../credits.html">Photo credits</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Legal</h4>
+        <h2>Legal</h2>
         <ul>
           <li><a href="../privacy.html">Privacy Policy</a></li>
           <li><a href="../terms.html">Terms of Service</a></li>
@@ -370,8 +395,8 @@
   <div class="cookie-consent">
     <div class="cookie-consent__inner">
       <div class="cookie-consent__text">
-        This site uses cookies for basic analytics, and for advertising if you accept. Decline and no
-        advertising or analytics cookies are set. <a href="../privacy.html">Read the privacy policy</a>.
+        This site shows advertising from Google. Accept and you will see personalised ads. Decline,
+        or ignore this, and ads stay non-personalised. <a href="../privacy.html">Read the privacy policy</a>.
       </div>
       <div class="cookie-consent__buttons">
         <button class="cookie-consent__btn cookie-consent__btn--accept">Accept</button>

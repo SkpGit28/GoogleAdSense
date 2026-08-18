@@ -7,9 +7,9 @@
   <meta name="theme-color" content="#ffffff">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
-  <meta name="description" content="Check if your travel dates collide with local monsoons or peak wedding seasons that inflate rates.">
+  <meta name="description" content="Rate pressure and conditions for every month of the year across Rajasthan, Goa, Kerala and Himachal. What the cheap months cost you in weather, and what to check before booking.">
   <title>Monsoon & Wedding Price Inflator - Prime Hotel Picks</title>
-  <link rel="canonical" href="https://primehotelpicks.com/budget-calculator.html">
+  <link rel="canonical" href="https://primehotelpicks.com/price-inflator.html">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +17,16 @@
 
   
   
+  <script>
+  /* Must run before the AdSense script below. Declining (or ignoring the
+     banner) leaves ads non-personalised; only an explicit Accept turns
+     personalisation on. Changing the choice reloads the page so this re-runs. */
+  (function () {
+    var ok = false;
+    try { ok = localStorage.getItem('cookieConsent') === 'accepted'; } catch (e) {}
+    (window.adsbygoogle = window.adsbygoogle || []).requestNonPersonalizedAds = ok ? 0 : 1;
+  })();
+  </script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6151386626480770" crossorigin="anonymous"></script>
 
   <style>
@@ -35,7 +45,8 @@
       <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">&#9776;</button>
       <nav class="nav" id="site-nav">
         <a href="index.html">Home</a>
-        <a href="tools.html" >Tools</a>
+        <a href="articles/index.html">Guides</a>
+        <a href="tools.html" class="active">Tools</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </nav>
@@ -55,98 +66,332 @@
   </div>
   <main id="main" class="legal-page">
 
-    <p>Indian hotel prices are heavily manipulated by local wedding dates, regional festivals, and monsoons. Select your destination and month to see if you are stepping into a pricing trap.</p>
-    
-    <div class="responsive-grid" style="background: var(--paper-sunk); padding: var(--s-5); border: 1px solid var(--rule); border-radius: 8px; margin-top: var(--s-5); display: grid; grid-template-columns: 1fr 1fr;" class="responsive-grid gap: var(--s-4);">
+    <p>Indian hotel rates are driven less by the hotel than by the calendar. Wedding dates, school
+      holidays, festival weeks and the monsoon move the same room by a factor of three. Pick a
+      region and a month to see what you are walking into, and what the cheap months cost you in
+      weather.</p>
+
+    <p class="tool-note">This is directional guidance on <strong>rate pressure and conditions</strong>,
+      not a quote. Every one of the 48 region-month combinations below is written out; nothing
+      falls through to a generic answer. Actual rates depend on the property, the exact dates and
+      how far ahead you book.</p>
+
+    <div class="responsive-grid" style="background: var(--paper-sunk); padding: var(--s-5); border: 1px solid var(--rule); border-radius: 8px; margin-top: var(--s-5); display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-4);">
         <div>
-            <label style="display:block; font-weight: 600; margin-bottom: 8px;">Region</label>
-            <select id="infRegion" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-family: var(--font-ui);">
+            <label for="infRegion" style="display:block; font-weight: 600; margin-bottom: 8px;">Region</label>
+            <select id="infRegion" onchange="checkMatrix()" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-family: var(--font-ui);">
                 <option value="Rajasthan">Rajasthan (Jaipur, Udaipur, Jodhpur)</option>
                 <option value="Goa">Goa</option>
-                <option value="Kerala">Kerala (Backwaters, Munnar)</option>
+                <option value="Kerala">Kerala (Backwaters, Munnar, coast)</option>
                 <option value="Himachal">Himachal Pradesh (Shimla, Manali)</option>
             </select>
         </div>
         <div>
-            <label style="display:block; font-weight: 600; margin-bottom: 8px;">Month of Travel</label>
-            <select id="infMonth" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-family: var(--font-ui);">
+            <label for="infMonth" style="display:block; font-weight: 600; margin-bottom: 8px;">Month of travel</label>
+            <select id="infMonth" onchange="checkMatrix()" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-family: var(--font-ui);">
                 <option value="Jan">January</option>
+                <option value="Feb">February</option>
+                <option value="Mar">March</option>
+                <option value="Apr">April</option>
                 <option value="May">May</option>
+                <option value="Jun">June</option>
                 <option value="Jul">July</option>
+                <option value="Aug">August</option>
+                <option value="Sep">September</option>
+                <option value="Oct">October</option>
                 <option value="Nov">November</option>
                 <option value="Dec">December</option>
             </select>
         </div>
-        <div style="grid-column: 1 / -1; margin-top: var(--s-3);">
-            <button onclick="checkMatrix()" style="width: 100%; background: var(--ink); color: #fff; border: none; padding: 14px; font-size: var(--t-md); font-weight: 700; border-radius: 6px; cursor: pointer; font-family: var(--font-ui);">Analyze Risk</button>
+        <div style="grid-column: 1 / -1;">
+            <button onclick="checkMatrix()" style="width: 100%; background: var(--ink); color: #fff; border: none; padding: 14px; font-size: var(--t-md); font-weight: 700; border-radius: 6px; cursor: pointer; font-family: var(--font-ui);">Check these dates</button>
         </div>
     </div>
 
     <div id="infResults" style="margin-top: var(--s-6); display: none; padding: var(--s-5); border-radius: 8px;">
         <div style="font-size: var(--t-xs); font-family: var(--font-ui); text-transform: uppercase; font-weight: bold; letter-spacing: 1px; margin-bottom: 8px;" id="infBadge">Status</div>
         <h2 id="infTitle" style="margin-top: 0; margin-bottom: var(--s-3);">Title</h2>
-        <p id="infDesc" style="font-size: var(--t-md); margin-bottom: 0;"></p>
+        <p id="infDesc" style="font-size: var(--t-md); margin-bottom: var(--s-4);"></p>
+        <dl id="infFacts" class="inf-facts"></dl>
     </div>
 
+    <h2 id="infYearHead" style="display: none;">The whole year, at a glance</h2>
+    <div class="table-scroll">
+      <table id="infYear" class="facts inf-year" style="display: none;">
+        <thead>
+          <tr><th>Month</th><th>Rate pressure</th><th>What the weather is doing</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <h2>How to use this</h2>
+
+    <p>The cheapest months are cheap for a reason, and the reason is usually weather. That does not
+      automatically make them a bad idea. Rajasthan in August is green and empty and costs a third
+      of December. Kerala during the south-west monsoon is the traditional season for Ayurvedic
+      treatment, not an off-season accident. What matters is knowing which trade you are making
+      before you book, rather than finding out on arrival.</p>
+
+    <p>The pattern that catches most people is the last week of December. Across every region on
+      this page it is the single most expensive week of the year, and in Goa and Kerala it is also
+      when compulsory gala dinner charges appear on the bill. If your dates are flexible by even a
+      fortnight, moving off that week changes the price more than choosing a different hotel does.</p>
+
+    <p>Working out what a specific booking actually costs once tax and mandatory extras are added?
+      Use the <a href="hotel-compare.html">true cost comparator</a>. For what a given rate buys on
+      the ground, the <a href="index.html">regional guides</a> cover it property by property.</p>
+
+    <style>
+      .tool-note { font-size: var(--t-sm); color: var(--ink-muted); border-left: 3px solid var(--rule); padding-left: var(--s-3); }
+      .inf-facts { display: grid; grid-template-columns: max-content 1fr; gap: 6px var(--s-4); margin: 0; font-family: var(--font-ui); font-size: var(--t-sm); }
+      .inf-facts dt { font-weight: 700; }
+      .inf-facts dd { margin: 0; }
+      .inf-year td:first-child { white-space: nowrap; font-weight: 600; }
+      .inf-year .pill { display: inline-block; padding: 2px 10px; border-radius: 999px; font-size: var(--t-xs);
+                        font-family: var(--font-ui); font-weight: 700; text-transform: uppercase; letter-spacing: .06em; white-space: nowrap; }
+      .inf-year tr.is-current { outline: 2px solid var(--ink); }
+      @media (max-width: 600px) { .inf-facts { grid-template-columns: 1fr; gap: 2px; } .inf-facts dd { margin-bottom: 8px; } }
+    </style>
+
     <script>
+    /* Rate pressure bands. "peak" is not a judgement about the destination, only
+       about what a room costs that month relative to the rest of its own year. */
+    const LEVELS = {
+      peak:     { label: 'Peak rates',      color: '#c62828', bg: '#ffebee' },
+      high:     { label: 'Rates climbing',  color: '#e65100', bg: '#fff3e0' },
+      shoulder: { label: 'Shoulder season', color: '#1565c0', bg: '#e3f2fd' },
+      low:      { label: 'Low rates',       color: '#2e7d32', bg: '#e8f5e9' }
+    };
+
+    const MONTHS = [['Jan','January'],['Feb','February'],['Mar','March'],['Apr','April'],
+                    ['May','May'],['Jun','June'],['Jul','July'],['Aug','August'],
+                    ['Sep','September'],['Oct','October'],['Nov','November'],['Dec','December']];
+
+    /* 4 regions x 12 months, every cell written out.
+       lvl = rate pressure, wx = weather in one line, head/body = the detail,
+       watch = the specific thing to check before booking that month. */
+    const MATRIX = {
+      Rajasthan: {
+        Jan: { lvl:'peak', wx:'Cold, dry, very clear', head:'Peak season, and cold at night',
+               body:'The best light of the year and the busiest hotels. Wedding season is still running, so heritage properties host functions that go loud and late. Nights drop to single figures and older palace rooms with high ceilings heat badly.',
+               watch:'Ask whether a wedding is booked on your dates, and whether the room has working heating.' },
+        Feb: { lvl:'peak', wx:'Warm days, cool nights', head:'The best weather of the year',
+               body:'Arguably the ideal month to be in Rajasthan, and priced accordingly. Jaipur runs its literature festival, which sells the city out well beyond the venue itself.',
+               watch:'Book Jaipur months ahead if your dates touch the festival.' },
+        Mar: { lvl:'high', wx:'Pleasant early, hot by month end', head:'The window closing',
+               body:'The first half still holds good weather and high rates. By the last week the heat is arriving and rates start easing. Holi brings a short, sharp spike in Jaipur and Udaipur.',
+               watch:'Rates often drop noticeably after the third week; shifting late can save real money.' },
+        Apr: { lvl:'low', wx:'Hot, 38-42C by afternoon', head:'Heat arrives, prices fall',
+               body:'Mornings are still workable and the crowds have gone. Afternoons are not. This is the first genuinely cheap month and the trade is that you sightsee early and hide from about noon.',
+               watch:'Confirm the pool is open and the air conditioning is serviced, not just listed.' },
+        May: { lvl:'low', wx:'Extreme heat, regularly over 43C', head:'The cheapest month, and the hardest',
+               body:'Rates bottom out because daytime sightseeing is genuinely impractical. Forts and open courtyards are punishing. Palace hotels with thick walls and shaded courtyards cope far better than modern builds.',
+               watch:'Power cuts are more common in peak summer; ask whether the hotel has a generator.' },
+        Jun: { lvl:'low', wx:'Peak heat, then humidity as monsoon nears', head:'Hot and increasingly heavy',
+               body:'The worst of both: still extremely hot, with humidity building ahead of the monsoon. Rates stay at their floor.',
+               watch:'Late June can bring the first rain, which turns dust to mud but breaks the heat.' },
+        Jul: { lvl:'low', wx:'Monsoon, moderate rain', head:'Rain arrives, and the state turns green',
+               body:'Rajasthan gets far less monsoon than the coast, so this is rain in bursts rather than continuous downpour. The landscape greens up, the lakes at Udaipur fill, and rates stay low.',
+               watch:'Lake levels vary hugely year to year; a low monsoon leaves Udaipur looking very different.' },
+        Aug: { lvl:'low', wx:'Monsoon, humid', head:'Quiet, green, and good value',
+               body:'The most underrated month if you can handle humidity. Hotels are empty, rates are at their lowest, and the countryside looks nothing like the postcard desert.',
+               watch:'Some smaller heritage properties close or run restoration work in the low season.' },
+        Sep: { lvl:'low', wx:'Monsoon retreating, still humid', head:'The value window opening',
+               body:'Rain tails off through the month and the heat eases. Rates have not yet moved. This is the best combination of price and conditions in the calendar.',
+               watch:'Ask what is under scaffolding, since low-season restoration often runs into September.' },
+        Oct: { lvl:'high', wx:'Dry, warm, clear', head:'Season restarts, rates follow',
+               body:'Weather turns excellent and the market notices immediately. Diwali falls in October or November and spikes domestic demand hard for about ten days.',
+               watch:'Check where Diwali falls in your year; rates around it behave like the December peak.' },
+        Nov: { lvl:'peak', wx:'Dry, warm days, cool nights', head:'Wedding season, and it is loud',
+               body:'Excellent weather and the start of the wedding calendar. Heritage hotels take wedding bookings that fill the property and run brass bands and fireworks late into the night.',
+               watch:'Ask directly whether the hotel has a wedding on your dates. Many will tell you.' },
+        Dec: { lvl:'peak', wx:'Cold nights, brilliant days', head:'The most expensive week of the year',
+               body:'Rates are high all month and then the last week of December is in a category of its own. Weather is superb and nights are properly cold.',
+               watch:'Christmas and New Year rates are often non-refundable and set months ahead.' }
+      },
+      Goa: {
+        Jan: { lvl:'peak', wx:'Dry, warm, low humidity', head:'Peak season in full swing',
+               body:'The weather Goa is sold on. Rates stay near their December level for the first half of the month before easing slightly.',
+               watch:'Rates after about the 8th are noticeably below the New Year week for the same room.' },
+        Feb: { lvl:'peak', wx:'Dry, warm, very pleasant', head:'Peak, with Carnival on top',
+               body:'Still peak pricing and arguably the nicest conditions of the season. Carnival adds a short spike in Panaji and the north.',
+               watch:'North Goa gets loud around Carnival; the south stays quiet.' },
+        Mar: { lvl:'high', wx:'Warming, humidity building', head:'The end of the good stretch',
+               body:'Still very usable, and rates begin to slide as humidity climbs. Good value for anyone who does not mind warmth.',
+               watch:'Late March onward the sea gets choppier and some water sports wind down.' },
+        Apr: { lvl:'shoulder', wx:'Hot and humid', head:'Emptying out',
+               body:'Noticeably humid, noticeably cheaper, and the beaches are quiet. Air conditioning stops being optional.',
+               watch:'Check the room has AC rather than only a fan, which is common at the budget end.' },
+        May: { lvl:'low', wx:'Very humid, pre-monsoon', head:'Heavy air, low prices',
+               body:'The most humid month before the rain breaks. Rates are near their floor and many businesses are already preparing to shut for the season.',
+               watch:'Confirm the restaurant and pool are still operating, not already closed for monsoon.' },
+        Jun: { lvl:'low', wx:'Monsoon breaks, heavy rain', head:'The shacks come down',
+               body:'The temporary beach shacks are dismantled by law before the monsoon, so the beach economy largely disappears. Rates collapse.',
+               watch:'Swimming is dangerous and often prohibited; red flags are not decorative.' },
+        Jul: { lvl:'low', wx:'Heaviest rain of the year', head:'Cheapest, and genuinely wet',
+               body:'Persistent heavy rain rather than showers. Goa is green and dramatic and almost empty, and the sea is off limits.',
+               watch:'Many beachfront properties close entirely; verify the hotel is actually open.' },
+        Aug: { lvl:'low', wx:'Monsoon continuing', head:'Still wet, still cheap',
+               body:'Rain eases marginally on July. Inland Goa, the spice plantations and the waterfalls are at their best.',
+               watch:'Ferry and boat trips are frequently cancelled at short notice.' },
+        Sep: { lvl:'low', wx:'Monsoon tailing off', head:'The turn',
+               body:'Rain becomes intermittent through the month. Rates are still at low-season levels while conditions improve week by week.',
+               watch:'Shacks have not yet rebuilt, so beach dining is limited until October.' },
+        Oct: { lvl:'shoulder', wx:'Drying out, occasional showers', head:'Best value of the year',
+               body:'The season restarts. Shacks go back up through the month, the sea calms, and rates have not yet climbed. The strongest price-to-conditions month in Goa.',
+               watch:'Early October can still catch the tail of the monsoon; late October is safer.' },
+        Nov: { lvl:'high', wx:'Dry, warm, clear', head:'Season proper, rates climbing',
+               body:'Conditions are now reliably good and pricing reflects it. Still meaningfully below December.',
+               watch:'Rates step up sharply in the last week; book before it if you can.' },
+        Dec: { lvl:'peak', wx:'Dry, warm, perfect', head:'Peak, plus compulsory gala dinners',
+               body:'The most expensive month by a distance. Resorts routinely add a mandatory Christmas or New Year gala dinner charge per person, which is not in the room rate you were quoted.',
+               watch:'Ask for the gala dinner charge in writing before booking. It is frequently thousands per head.' }
+      },
+      Kerala: {
+        Jan: { lvl:'peak', wx:'Dry, warm, low humidity', head:'Peak backwater season',
+               body:'The driest, most comfortable stretch of the year and the busiest. Houseboats and backwater resorts are at their highest rates.',
+               watch:'Houseboat quality varies enormously at peak pricing; check the specific boat, not the operator.' },
+        Feb: { lvl:'peak', wx:'Dry, warm', head:'Peak, and consistently good',
+               body:'Conditions hold. Hill stations like Munnar are at their most pleasant and equally at their busiest.',
+               watch:'Munnar sells out at weekends; midweek is both cheaper and calmer.' },
+        Mar: { lvl:'high', wx:'Warming, humidity rising', head:'Heat building on the coast',
+               body:'The coast warms up first while the hills stay comfortable. Rates start to ease from mid-month.',
+               watch:'Coastal humidity climbs fast; the hills hold their conditions a month longer.' },
+        Apr: { lvl:'shoulder', wx:'Hot and humid', head:'Hot on the coast, still fine in the hills',
+               body:'A split month. Backwaters and beaches are heavy going, Munnar and the high ranges remain comfortable, and rates have dropped everywhere.',
+               watch:'Consider weighting the trip towards the hills rather than the coast.' },
+        May: { lvl:'low', wx:'Very hot, pre-monsoon storms', head:'Waiting for the rain',
+               body:'Uncomfortable on the coast with pre-monsoon thunderstorms building. Rates are near their floor.',
+               watch:'Ayurveda packages start being discounted ahead of the monsoon season proper.' },
+        Jun: { lvl:'low', wx:'South-west monsoon arrives', head:'Monsoon, and the Ayurveda season',
+               body:'The rain arrives in force. This is traditionally the preferred season for Ayurvedic treatment, because the humidity is considered to open the pores, so serious wellness properties are busier than the rate suggests.',
+               watch:'For treatment, check the centre is government-classified and the physician is resident.' },
+        Jul: { lvl:'low', wx:'Heaviest rain of the year', head:'The wettest month',
+               body:'Continuous heavy rain. A houseboat in this is a very different proposition from the brochure, and hill walking is slippery and leech-heavy.',
+               watch:'Leeches in Munnar and Thekkady are a genuine issue; take salt and proper socks.' },
+        Aug: { lvl:'low', wx:'Monsoon, easing slightly', head:'Rain, plus Onam',
+               body:'Rain continues. Onam falls in August or September and lifts domestic demand sharply for about a week, which is the one time low-season rates do not apply.',
+               watch:'Check where Onam falls in your year; it moves.' },
+        Sep: { lvl:'low', wx:'Monsoon retreating', head:'Clearing, still cheap',
+               body:'Rain becomes intermittent. The landscape is at its greenest and the crowds have not returned.',
+               watch:'Backwater water levels are high, which is good for houseboats and bad for some jetties.' },
+        Oct: { lvl:'shoulder', wx:'North-east monsoon, evening showers', head:'Second monsoon, but a milder one',
+               body:'Kerala gets a second, gentler monsoon from the north-east, typically as afternoon and evening showers rather than all-day rain. Mornings are often clear and rates are still low.',
+               watch:'Plan outdoor activity for mornings and expect to be indoors by late afternoon.' },
+        Nov: { lvl:'high', wx:'Drying, warm, pleasant', head:'Season restarting',
+               body:'Showers tail off and the season begins. Good conditions before December pricing arrives.',
+               watch:'The best value-to-weather month alongside October if you can travel late in the month.' },
+        Dec: { lvl:'peak', wx:'Dry, warm, ideal', head:'Peak, with gala dinner charges',
+               body:'Peak rates all month and an extreme spike over Christmas and New Year. Beach resorts at Kovalam and Varkala and the backwater properties add compulsory gala dinner charges.',
+               watch:'Get the gala charge and any minimum-night requirement confirmed in writing.' }
+      },
+      Himachal: {
+        Jan: { lvl:'high', wx:'Snow, sub-zero nights', head:'Snow tourism, and cold rooms',
+               body:'Manali and the higher stations draw a heavy snow-season crowd, so rates are high despite difficult conditions. Central heating is close to non-existent at the budget end.',
+               watch:'Confirm room heating and hot water hours in writing. An electric blanket is not a heater.' },
+        Feb: { lvl:'high', wx:'Snow continuing, very cold', head:'Still snow, still busy',
+               body:'Conditions and pricing much as January. Road closures over the higher passes are routine.',
+               watch:'Ask what happens to your booking if the road to the property closes.' },
+        Mar: { lvl:'shoulder', wx:'Thawing, cold but clearing', head:'The quiet thaw',
+               body:'Snow retreats up the slopes, the crowds thin and rates drop. Cold but increasingly pleasant, and one of the calmest months to be there.',
+               watch:'Some high-altitude routes and passes remain shut well into spring.' },
+        Apr: { lvl:'high', wx:'Mild, pleasant, clear', head:'Season opens',
+               body:'Genuinely pleasant weather and the start of the domestic rush. Rates climb through the month ahead of the May peak.',
+               watch:'Early April is materially cheaper than late April for the same conditions.' },
+        May: { lvl:'peak', wx:'Warm, dry, clear', head:'The plains empty into the hills',
+               body:'School holidays send an enormous domestic crowd up from the northern plains. This is the most expensive month and the worst for traffic. Crossing Manali or Shimla can take hours.',
+               watch:'Check how far the hotel is from where the car can actually reach in traffic.' },
+        Jun: { lvl:'peak', wx:'Warm, monsoon approaching late month', head:'Peak continues until the rain',
+               body:'The rush holds through most of June until the monsoon arrives and the market turns over almost immediately.',
+               watch:'Late June rates fall sharply once the first serious rain lands.' },
+        Jul: { lvl:'low', wx:'Monsoon, landslide risk', head:'Cheap, and genuinely risky',
+               body:'Rates collapse. So, sometimes, do the roads. Himachal is landslide-prone and highway closures during heavy rain are common and can last days.',
+               watch:'Build buffer days around flights. Do not book a tight onward connection.' },
+        Aug: { lvl:'low', wx:'Heaviest rain, highest landslide risk', head:'The riskiest month on the roads',
+               body:'The peak of the monsoon and the peak of road disruption. Lowest rates of the year, for good reason.',
+               watch:'Check current road status close to departure rather than relying on the schedule.' },
+        Sep: { lvl:'shoulder', wx:'Monsoon retreating, clearing', head:'The best value window of the year',
+               body:'Rain stops, the air clears to its best visibility, the crowds have gone and rates have not yet recovered. If you want one month in Himachal on value, this is it.',
+               watch:'Early September can still catch monsoon tail; the second half is the safer bet.' },
+        Oct: { lvl:'high', wx:'Clear, crisp, excellent visibility', head:'Post-monsoon clarity',
+               body:'The clearest mountain views of the year and comfortable daytime temperatures. Rates rise to meet it, though nothing like May.',
+               watch:'Nights get cold quickly through October; check heating again.' },
+        Nov: { lvl:'shoulder', wx:'Cold, dry, quiet', head:'Cold, empty and cheap',
+               body:'Before the snow crowd and after the autumn one. Properties are quiet and rates are soft, but nights are already hard and some seasonal places have shut.',
+               watch:'Verify the property is open and heated rather than nominally operating.' },
+        Dec: { lvl:'high', wx:'Snow arriving, very cold', head:'The New Year snow rush',
+               body:'Quiet early in the month, then a sharp spike over Christmas and New Year as Shimla and Manali fill for snow. The last week prices like peak season.',
+               watch:'Snow is not guaranteed in early December, but New Year rates are charged regardless.' }
+      }
+    };
+
     function checkMatrix() {
         const region = document.getElementById('infRegion').value;
-        const month = document.getElementById('infMonth').value;
+        const month  = document.getElementById('infMonth').value;
+        const cell   = MATRIX[region][month];
+        const lv     = LEVELS[cell.lvl];
+
         const res = document.getElementById('infResults');
-        const badge = document.getElementById('infBadge');
-        const title = document.getElementById('infTitle');
-        const desc = document.getElementById('infDesc');
-        
         res.style.display = 'block';
-        
-        let danger = "Low Risk";
-        let color = "#2e7d32";
-        let bg = "#e8f5e9";
-        let t = "";
-        let d = "";
+        res.style.backgroundColor = lv.bg;
+        res.style.border = '1px solid ' + lv.color;
 
-        if (region === "Rajasthan" && (month === "Nov" || month === "Dec" || month === "Jan")) {
-            danger = "Extreme Danger"; color = "#c62828"; bg = "#ffebee";
-            t = "Peak Wedding & Tourist Season";
-            d = "Rates are inflated by up to 300%. Expect loud Baraat (wedding) processions late into the night at major heritage hotels, making sleep difficult.";
-        } else if (region === "Rajasthan" && month === "May") {
-            danger = "Heat Warning"; color = "#e65100"; bg = "#fff3e0";
-            t = "Severe Summer Heat";
-            d = "Rates are very cheap, but temperatures exceed 40°C. Sightseeing is impossible during the day.";
-        } else if (region === "Goa" && (month === "Dec" || month === "Jan")) {
-            danger = "Extreme Danger"; color = "#c62828"; bg = "#ffebee";
-            t = "Peak Holiday Surge";
-            d = "Every resort enforces mandatory 'Gala Dinner' charges (₹5k-₹15k per person). Taxis and flights are at their absolute most expensive.";
-        } else if (region === "Goa" && month === "Jul") {
-            danger = "Weather Warning"; color = "#1565c0"; bg = "#e3f2fd";
-            t = "Heavy Monsoons";
-            d = "Rates drop significantly, but many beach shacks are dismantled and swimming is strictly prohibited due to dangerous currents.";
-        } else if (region === "Kerala" && month === "Jul") {
-            danger = "Weather Warning"; color = "#1565c0"; bg = "#e3f2fd";
-            t = "Active Monsoons";
-            d = "Houseboat experiences are miserable in heavy rain. Leech and mosquito populations spike at nature resorts.";
-        } else if (region === "Himachal" && month === "May") {
-            danger = "High Risk"; color = "#e65100"; bg = "#fff3e0";
-            t = "Summer Vacation Chaos";
-            d = "Massive influx of domestic tourists escaping the heat. Expect 3-hour traffic jams just to cross Shimla or Manali.";
-        } else if (region === "Himachal" && month === "Jan") {
-            danger = "Variable Risk"; color = "#1565c0"; bg = "#e3f2fd";
-            t = "Snow Risk";
-            d = "Beautiful views, but many budget hotels lack central heating. Roads frequently close due to snow, trapping you in your hotel.";
-        } else {
-            danger = "Sweet Spot"; color = "#2e7d32"; bg = "#e8f5e9";
-            t = "Good Value Window";
-            d = "You have selected a shoulder season or off-peak window with acceptable weather. Hotel rates should be negotiable and crowds minimal.";
-        }
+        const badge = document.getElementById('infBadge');
+        badge.innerText = lv.label;
+        badge.style.color = lv.color;
 
-        res.style.backgroundColor = bg;
-        res.style.border = `1px solid ${color}`;
-        badge.style.color = color;
-        badge.innerText = danger;
-        title.innerText = t;
-        title.style.color = color;
-        desc.innerText = d;
+        const title = document.getElementById('infTitle');
+        title.innerText = cell.head;
+        title.style.color = lv.color;
+
+        document.getElementById('infDesc').innerText = cell.body;
+
+        const facts = document.getElementById('infFacts');
+        facts.innerHTML = '';
+        [['Conditions', cell.wx], ['Before you book', cell.watch]].forEach(function (pair) {
+            const dt = document.createElement('dt'); dt.textContent = pair[0];
+            const dd = document.createElement('dd'); dd.textContent = pair[1];
+            facts.appendChild(dt); facts.appendChild(dd);
+        });
+
+        renderYear(region, month);
     }
+
+    function renderYear(region, current) {
+        const table = document.getElementById('infYear');
+        const head  = document.getElementById('infYearHead');
+        const body  = table.querySelector('tbody');
+        body.innerHTML = '';
+
+        MONTHS.forEach(function (m) {
+            const c  = MATRIX[region][m[0]];
+            const lv = LEVELS[c.lvl];
+            const tr = document.createElement('tr');
+            if (m[0] === current) tr.className = 'is-current';
+
+            const tdM = document.createElement('td'); tdM.textContent = m[1];
+
+            const tdL = document.createElement('td');
+            const pill = document.createElement('span');
+            pill.className = 'pill';
+            pill.textContent = lv.label;
+            pill.style.background = lv.bg;
+            pill.style.color = lv.color;
+            pill.style.border = '1px solid ' + lv.color;
+            tdL.appendChild(pill);
+
+            const tdW = document.createElement('td'); tdW.textContent = c.wx;
+
+            tr.appendChild(tdM); tr.appendChild(tdL); tr.appendChild(tdW);
+            body.appendChild(tr);
+        });
+
+        head.style.display = '';
+        table.style.display = '';
+    }
+
+    document.addEventListener('DOMContentLoaded', checkMatrix);
     </script>
 
   </main>
@@ -156,20 +401,22 @@
   <footer class="footer">
     <div class="footer-grid">
       <div class="footer-col">
-        <h4>Prime Hotel Picks</h4>
+        <h2>Prime Hotel Picks</h2>
         <p>Researched guides to where you actually stay in India. Rates, locations and trade-offs, checked and dated.</p>
       </div>
       <div class="footer-col">
-        <h4>Site</h4>
+        <h2>Site</h2>
         <ul>
           <li><a href="index.html">Home</a></li>
+          <li><a href="articles/index.html">All guides</a></li>
+          <li><a href="tools.html">Tools</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="credits.html">Photo credits</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Legal</h4>
+        <h2>Legal</h2>
         <ul>
           <li><a href="privacy.html">Privacy Policy</a></li>
           <li><a href="terms.html">Terms of Service</a></li>
@@ -188,8 +435,8 @@
   <div class="cookie-consent">
     <div class="cookie-consent__inner">
       <div class="cookie-consent__text">
-        This site uses cookies for basic analytics, and for advertising if you accept. Decline and no
-        advertising or analytics cookies are set. <a href="privacy.html">Read the privacy policy</a>.
+        This site shows advertising from Google. Accept and you will see personalised ads. Decline,
+        or ignore this, and ads stay non-personalised. <a href="privacy.html">Read the privacy policy</a>.
       </div>
       <div class="cookie-consent__buttons">
         <button class="cookie-consent__btn cookie-consent__btn--accept">Accept</button>

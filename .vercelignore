@@ -1,0 +1,20 @@
+# Files in this repo that must never be part of a deployment.
+#
+# Everything listed here was previously served publicly at 200. The
+# _build/bodies/*.html files were the worst of it: 20 unstyled, title-less,
+# navigation-free pages carrying a byte-for-byte copy of every article's text,
+# which reads to a crawler as duplicate, low-value content.
+
+# Build sources: article bodies, metadata, image manifests, PowerShell build
+# and check scripts, scratch candidate JSON.
+_build/
+
+# One-off patch scripts used to edit the static HTML in place.
+*.py
+
+# Apache config. Inert here (this site is on Vercel) and superseded by
+# vercel.json. Kept in the repo for reference only.
+.htaccess
+
+# Editor / tooling scratch.
+.mimocode/

@@ -55,38 +55,26 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  /* ---------- Cookie consent, gating ad loading ----------
-     Ads are only loaded once the visitor has actively accepted. Declining
-     leaves the page ad-free rather than storing a preference nothing reads. */
+  /* ---------- Cookie consent ----------
+     The AdSense script itself loads from the <head> on every page, because
+     AdSense review has to be able to find it. What the visitor's choice
+     controls is personalisation: an inline shim in the <head> reads this same
+     localStorage key before the ad script runs and sets
+     requestNonPersonalizedAds accordingly.
+
+     A change of mind therefore needs a reload to take effect, which is what
+     the reload below is for. Do not reintroduce a gate here that claims to
+     stop the script loading -- the previous version of this file did exactly
+     that, keyed on an attribute no element ever carried, so it never ran while
+     the banner and privacy policy both promised it did. */
   var CONSENT_KEY = 'cookieConsent';
   var banner = document.querySelector('.cookie-consent');
 
-  function loadAds() {
-    var slots = document.querySelectorAll('.ad-slot[data-ad-client]');
-    if (!slots.length) return;
-    if (!document.getElementById('adsense-loader')) {
-      var client = slots[0].getAttribute('data-ad-client');
-      if (!client || client.indexOf('ca-pub-') !== 0) return; // not configured yet
-      var s = document.createElement('script');
-      s.id = 'adsense-loader';
-      s.async = true;
-      s.crossOrigin = 'anonymous';
-      s.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + client;
-      document.head.appendChild(s);
-    }
-    slots.forEach(function (slot) {
-      if (slot.dataset.filled) return;
-      slot.dataset.filled = '1';
-      (window.adsbygoogle = window.adsbygoogle || []).push({});
-    });
+  function readConsent() {
+    try { return localStorage.getItem(CONSENT_KEY); } catch (e) { return null; }
   }
 
-  var stored = null;
-  try { stored = localStorage.getItem(CONSENT_KEY); } catch (e) { /* storage blocked */ }
-
-  if (stored === 'accepted') {
-    loadAds();
-  } else if (!stored && banner) {
+  if (!readConsent() && banner) {
     setTimeout(function () { banner.classList.add('show'); }, 800);
   }
 
@@ -95,8 +83,14 @@ document.addEventListener('DOMContentLoaded', function () {
     var decline = e.target.closest('.cookie-consent__btn--decline');
     if (!accept && !decline) return;
 
-    try { localStorage.setItem(CONSENT_KEY, accept ? 'accepted' : 'declined'); } catch (err) {}
+    var previous = readConsent();
+    var choice = accept ? 'accepted' : 'declined';
+    try { localStorage.setItem(CONSENT_KEY, choice); } catch (err) {}
     if (banner) banner.classList.remove('show');
-    if (accept) loadAds();
+
+    /* Only reload when the setting actually changed, so a first-time Decline
+       (already the default) does not bounce the page for no reason. */
+    if (previous === 'accepted' && choice === 'declined') location.reload();
+    if (previous !== 'accepted' && choice === 'accepted') location.reload();
   });
 });

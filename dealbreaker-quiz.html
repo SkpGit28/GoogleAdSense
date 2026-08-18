@@ -9,7 +9,7 @@
 
   <meta name="description" content="Take a 3-question quiz to find the exact honest hotel guide that fits your travel style.">
   <title>The Dealbreaker Matchmaker - Prime Hotel Picks</title>
-  <link rel="canonical" href="https://primehotelpicks.com/budget-calculator.html">
+  <link rel="canonical" href="https://primehotelpicks.com/dealbreaker-quiz.html">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +17,16 @@
 
   
   
+  <script>
+  /* Must run before the AdSense script below. Declining (or ignoring the
+     banner) leaves ads non-personalised; only an explicit Accept turns
+     personalisation on. Changing the choice reloads the page so this re-runs. */
+  (function () {
+    var ok = false;
+    try { ok = localStorage.getItem('cookieConsent') === 'accepted'; } catch (e) {}
+    (window.adsbygoogle = window.adsbygoogle || []).requestNonPersonalizedAds = ok ? 0 : 1;
+  })();
+  </script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6151386626480770" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -28,7 +38,8 @@
       <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">&#9776;</button>
       <nav class="nav" id="site-nav">
         <a href="index.html">Home</a>
-        <a href="tools.html" >Tools</a>
+        <a href="articles/index.html">Guides</a>
+        <a href="tools.html" class="active">Tools</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </nav>
@@ -53,7 +64,7 @@
     <div id="quizContainer" style="background: var(--paper-sunk); padding: var(--s-6); border: 1px solid var(--rule); border-radius: 8px; margin-top: var(--s-5);">
         
         <div id="q1">
-            <h3 style="margin-top: 0;">1. What is your absolute maximum budget per night?</h3>
+            <h2 style="margin-top: 0;">1. What is your absolute maximum budget per night?</h2>
             <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 16px;">
                 <button onclick="nextQ(1, 'budget')" class="quiz-btn">Under ₹1,500 (Hostels & Backpacking)</button>
                 <button onclick="nextQ(1, 'mid')" class="quiz-btn">₹3,000 - ₹8,000 (Standard Comfort)</button>
@@ -62,7 +73,7 @@
         </div>
 
         <div id="q2" style="display: none;">
-            <h3 style="margin-top: 0;">2. What is your biggest dealbreaker?</h3>
+            <h2 style="margin-top: 0;">2. What is your biggest dealbreaker?</h2>
             <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 16px;">
                 <button onclick="nextQ(2, 'noise')" class="quiz-btn">I hate loud traffic and honking</button>
                 <button onclick="nextQ(2, 'scams')" class="quiz-btn">I hate being scammed by "Hidden Fees"</button>
@@ -71,7 +82,7 @@
         </div>
 
         <div id="q3" style="display: none;">
-            <h3 style="margin-top: 0;">3. What is the vibe of your trip?</h3>
+            <h2 style="margin-top: 0;">3. What is the vibe of your trip?</h2>
             <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 16px;">
                 <button onclick="finishQuiz('rajasthan-palace-hotels.html')" class="quiz-btn">Royal & Historic (Heritage)</button>
                 <button onclick="finishQuiz('beach-resorts-goa.html')" class="quiz-btn">Beaches & Pools</button>
@@ -129,20 +140,22 @@
   <footer class="footer">
     <div class="footer-grid">
       <div class="footer-col">
-        <h4>Prime Hotel Picks</h4>
+        <h2>Prime Hotel Picks</h2>
         <p>Researched guides to where you actually stay in India. Rates, locations and trade-offs, checked and dated.</p>
       </div>
       <div class="footer-col">
-        <h4>Site</h4>
+        <h2>Site</h2>
         <ul>
           <li><a href="index.html">Home</a></li>
+          <li><a href="articles/index.html">All guides</a></li>
+          <li><a href="tools.html">Tools</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="credits.html">Photo credits</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Legal</h4>
+        <h2>Legal</h2>
         <ul>
           <li><a href="privacy.html">Privacy Policy</a></li>
           <li><a href="terms.html">Terms of Service</a></li>
@@ -161,8 +174,8 @@
   <div class="cookie-consent">
     <div class="cookie-consent__inner">
       <div class="cookie-consent__text">
-        This site uses cookies for basic analytics, and for advertising if you accept. Decline and no
-        advertising or analytics cookies are set. <a href="privacy.html">Read the privacy policy</a>.
+        This site shows advertising from Google. Accept and you will see personalised ads. Decline,
+        or ignore this, and ads stay non-personalised. <a href="privacy.html">Read the privacy policy</a>.
       </div>
       <div class="cookie-consent__buttons">
         <button class="cookie-consent__btn cookie-consent__btn--accept">Accept</button>

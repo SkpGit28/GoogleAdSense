@@ -545,7 +545,7 @@ blockquote {
 .pros--section { background: var(--go-tint); border-color: #c6e0d0; }
 .cons--section { background: var(--caution-tint); border-color: #ecd9ac; }
 
-.pros-cons__section h5 {
+.pros-cons__section h3 {
   font-size: var(--t-xs);
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -665,7 +665,7 @@ blockquote {
 }
 .methodology-box__header:hover { background: #efece5; }
 
-.methodology-box__header h4 {
+.methodology-box__header h2 {
   font-size: var(--t-xs);
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -704,7 +704,7 @@ blockquote {
   margin: var(--s-5) 0;
   font-size: var(--t-sm);
 }
-.highlight-box h4 {
+.highlight-box h3 {
   font-size: var(--t-xs);
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -779,7 +779,48 @@ blockquote {
   margin-bottom: var(--s-2);
 }
 .ad-slot > span { display: none; }
+/* An ad slot with nothing in it must not paint a rule and the word
+   "Advertisement" over empty space. Auto ads inject into these at runtime;
+   until something lands, the slot collapses. */
+.ad-slot:empty { display: none; }
 .ad-in-content { max-width: 336px; margin-inline: auto; }
+
+/* --------------------------------------------------------------------------
+   17b. Archive / all guides
+   -------------------------------------------------------------------------- */
+.archive-page { max-width: 980px; margin: var(--s-7) auto var(--s-8); padding: 0 var(--s-5); }
+.archive-intro { max-width: 68ch; margin-bottom: var(--s-7); }
+.archive-group { margin-bottom: var(--s-8); }
+.archive-group h2 {
+  font-size: var(--t-lg);
+  margin: 0 0 var(--s-5);
+  padding-bottom: var(--s-2);
+  border-bottom: 2px solid var(--ink);
+}
+.archive-list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--s-4);
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+.archive-item a {
+  display: flex; flex-direction: column; gap: 6px; height: 100%;
+  padding: var(--s-4); background: var(--paper); border: 1px solid var(--rule);
+  text-decoration: none; color: inherit; transition: border-color .12s, transform .12s;
+}
+.archive-item a:hover, .archive-item a:focus-visible {
+  border-color: var(--ink); transform: translateY(-2px);
+}
+.archive-item__place {
+  font-family: var(--font-ui); font-size: var(--t-xs); text-transform: uppercase;
+  letter-spacing: .12em; color: var(--ink-subtle);
+}
+.archive-item__title { font-weight: 700; font-size: var(--t-md); line-height: 1.3; }
+.archive-item__desc { font-size: var(--t-sm); color: var(--ink-muted); line-height: 1.5; }
+.archive-item__meta {
+  margin-top: auto; padding-top: var(--s-2);
+  font-family: var(--font-ui); font-size: var(--t-xs); color: var(--ink-subtle);
+}
+@media (max-width: 600px) {
+  .archive-page { padding: 0 var(--s-4); }
+  .archive-list { grid-template-columns: 1fr; }
+}
 
 /* --------------------------------------------------------------------------
    18. Legal / static pages
@@ -859,7 +900,7 @@ blockquote {
   gap: var(--s-6);
 }
 
-.footer-col h4 {
+.footer-col h2 {
   font-size: var(--t-xs);
   letter-spacing: 0.12em;
   text-transform: uppercase;

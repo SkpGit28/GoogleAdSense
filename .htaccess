@@ -1,3 +1,16 @@
+# =========================================================================
+#  INERT -- NOT IN USE.
+#
+#  This site is served by Vercel, not Apache. Verified from live response
+#  headers (server: Vercel; no CSP, X-Frame-Options or X-Content-Type-Options
+#  present). Every directive below is therefore dead: the CSP, the bot
+#  blocking, Options -Indexes, the FilesMatch allowlist, caching and deflate.
+#
+#  The live configuration is vercel.json in the repo root. Edit that file.
+#  This one is excluded from deployment via .vercelignore and kept only as a
+#  record of intent.
+# =========================================================================
+
 # ===== ERROR DOCUMENTS =====
 ErrorDocument 404 /404.html
 
