@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <div id="results">Running...</div>
+  <script>
+    async function runTests() {
+      const files = [
+        'amritsar-hotels-golden-temple.html', 'andaman-island-resorts.html', 'beach-resorts-goa.html',
+        'bengaluru-business-hotels.html', 'best-hotels-new-delhi.html', 'best-hotels-udaipur.html',
+        'budget-hostels-india.html', 'darjeeling-tea-estate-stays.html', 'eco-stays-india.html',
+        'heritage-hotels-mumbai.html', 'himachal-hill-station-hotels.html', 'hotels-near-taj-mahal-agra.html',
+        'hyderabad-luxury-hotels.html', 'kerala-backwater-resorts.html', 'kolkata-heritage-hotels.html',
+        'ladakh-hotels-leh.html', 'rajasthan-palace-hotels.html', 'rishikesh-wellness-retreats.html',
+        'varanasi-ghat-hotels.html', 'wildlife-lodges-ranthambore.html'
+      ];
+      
+      let nestedHotelEntry = 0;
+      let invalidUlChildren = 0;
+      let totalBlocks = 0;
+      let symmetricBlocks = 0;
+      let symDistribution = {};
+      
+      const parser = new DOMParser();
+      
+      for (const f of files) {
+        const res = await fetch('/articles/' + f);
+        const text = await res.text();
+        const doc = parser.parseFromString(text, 'text/html');
+        
+        // V10 checks
+        nestedHotelEntry += doc.querySelectorAll('.hotel-entry .hotel-entry').length;
+        invalidUlChildren += doc.querySelectorAll('ul .hotel-entry, ul .facts, ul figure, .pros-cons__list table').length;
+        
+        // V11 checks
+        const blocks = doc.querySelectorAll('.pros-cons');
+        for (const b of blocks) {
+          totalBlocks++;
+          const p = b.querySelectorAll('.pros--section li').length;
+          const c = b.querySelectorAll('.cons--section li').length;
+          if (p === c) symmetricBlocks++;
+          
+          const key = `${p}v${c}`;
+          symDistribution[key] = (symDistribution[key] || 0) + 1;
+        }
+      }
+      
+      const symPercent = totalBlocks > 0 ? (symmetricBlocks / totalBlocks * 100).toFixed(1) : 0;
+      
+      const out = `
+V10 Nested hotel-entry: ${nestedHotelEntry}
+V10 Invalid UL children: ${invalidUlChildren}
+V11 Symmetry: ${symPercent}% (${symmetricBlocks} / ${totalBlocks})
+V11 Distribution: ${JSON.stringify(symDistribution)}
+`;
+      document.getElementById('results').innerText = out;
+    }
+    runTests();
+  </script>
+</body>
+</html>

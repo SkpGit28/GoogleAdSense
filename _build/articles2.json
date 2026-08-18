@@ -1,0 +1,698 @@
+{
+  "articles": [
+    {
+      "slug": "best-hotels-new-delhi",
+      "shortTitle": "Where to stay in Delhi",
+      "place": "New Delhi",
+      "title": "Delhi Hotels: Where to Stay (And 2 Overpriced Hotels to Skip)",
+      "h1": "Delhi hotels: Where to stay (and 2 overpriced hotels to skip)",
+      "description": "The Imperial and the Lutyens options against staying in the old city or near the airport. Metro lines, traffic and indicative rates checked July 2026.",
+      "region": "Delhi",
+      "published": "2026-07-27",
+      "publishedLabel": "27 Jul 2026",
+      "updated": "2026-07-27",
+      "updatedLabel": "27 Jul 2026",
+      "ratesChecked": "Jul 2026",
+      "ogImage": "images/hotels/imperial-delhi-1200.jpg",
+      "keywords": [
+        "Delhi hotels",
+        "The Imperial New Delhi",
+        "Connaught Place hotels",
+        "Old Delhi stay",
+        "Aerocity"
+      ],
+      "board": [
+        {
+          "k": "City",
+          "v": "Delhi"
+        },
+        {
+          "k": "Areas",
+          "v": "3"
+        },
+        {
+          "k": "From",
+          "v": "Rs 3,500"
+        },
+        {
+          "k": "Rates checked",
+          "v": "Jul 2026"
+        }
+      ],
+      "hotels": [
+        {
+          "name": "The Imperial New Delhi",
+          "street": "Janpath",
+          "locality": "New Delhi",
+          "region": "Delhi",
+          "priceRange": "Rs 18,000-Rs 90,000"
+        }
+      ]
+    },
+    {
+      "slug": "beach-resorts-goa",
+      "shortTitle": "Goa beach resorts",
+      "place": "Goa",
+      "title": "10 Goa Beach Resorts With Private Pools (Photos + Honest Pros & Cons)",
+      "h1": "10 Goa beach resorts with private pools (photos + honest pros & cons)",
+      "description": "Taj Fort Aguada in the north against the quiet south Goa beaches. Which coast suits which trip, with indicative rates checked July 2026.",
+      "region": "Goa",
+      "published": "2026-07-27",
+      "publishedLabel": "27 Jul 2026",
+      "updated": "2026-07-27",
+      "updatedLabel": "27 Jul 2026",
+      "ratesChecked": "Jul 2026",
+      "ogImage": "images/hotels/taj-fort-aguada-1200.jpg",
+      "keywords": [
+        "Goa resorts",
+        "Taj Fort Aguada",
+        "south Goa beaches",
+        "north Goa hotels",
+        "Majorda"
+      ],
+      "board": [
+        {
+          "k": "State",
+          "v": "Goa"
+        },
+        {
+          "k": "Coasts",
+          "v": "2"
+        },
+        {
+          "k": "From",
+          "v": "Rs 4,000"
+        },
+        {
+          "k": "Rates checked",
+          "v": "Jul 2026"
+        }
+      ],
+      "hotels": [
+        {
+          "name": "Taj Fort Aguada Resort and Spa",
+          "street": "Sinquerim",
+          "locality": "Candolim",
+          "region": "Goa",
+          "priceRange": "Rs 18,000-Rs 70,000"
+        }
+      ]
+    },
+    {
+      "slug": "hotels-near-taj-mahal-agra",
+      "shortTitle": "Hotels near the Taj Mahal",
+      "place": "Agra",
+      "title": "Hotels Near the Taj Mahal That Actually Have the View (And Which Lie)",
+      "h1": "Hotels near the Taj Mahal that actually have the view (and which lie)",
+      "description": "Taj-facing rooms in Agra are a small and expensive category, and many hotels claiming a view do not have one. Indicative rates checked July 2026.",
+      "region": "Uttar Pradesh",
+      "published": "2026-07-27",
+      "publishedLabel": "27 Jul 2026",
+      "updated": "2026-07-27",
+      "updatedLabel": "27 Jul 2026",
+      "ratesChecked": "Jul 2026",
+      "ogImage": "images/hotels/taj-convention-agra-1200.jpg",
+      "keywords": [
+        "Agra hotels",
+        "Taj Mahal view hotel",
+        "ITC Mughal",
+        "Oberoi Amarvilas",
+        "Taj Ganj"
+      ],
+      "board": [
+        {
+          "k": "City",
+          "v": "Agra"
+        },
+        {
+          "k": "Options",
+          "v": "3"
+        },
+        {
+          "k": "From",
+          "v": "Rs 2,500"
+        },
+        {
+          "k": "Rates checked",
+          "v": "Jul 2026"
+        }
+      ],
+      "hotels": [
+        {
+          "name": "ITC Mughal",
+          "street": "Taj Ganj",
+          "locality": "Agra",
+          "region": "Uttar Pradesh",
+          "priceRange": "Rs 12,000-Rs 60,000"
+        }
+      ]
+    },
+    {
+      "slug": "himachal-hill-station-hotels",
+      "shortTitle": "Himachal hill stations",
+      "place": "Himachal",
+      "title": "Shimla vs Manali Hotels: The Brutal Truth About Hill Station Stays",
+      "h1": "Shimla vs Manali hotels: The brutal truth about hill station stays",
+      "description": "Where to stay in Himachal, and why the drive up matters more than the room. The Oberoi Cecil, Mall Road and the Manali valley. Rates checked July 2026.",
+      "region": "Himachal Pradesh",
+      "published": "2026-07-27",
+      "publishedLabel": "27 Jul 2026",
+      "updated": "2026-07-27",
+      "updatedLabel": "27 Jul 2026",
+      "ratesChecked": "Jul 2026",
+      "ogImage": "images/hotels/oberoi-cecil-1200.jpg",
+      "keywords": [
+        "Shimla hotels",
+        "Manali hotels",
+        "Oberoi Cecil",
+        "Himachal hill station",
+        "Mall Road Shimla"
+      ],
+      "board": [
+        {
+          "k": "State",
+          "v": "Himachal Pradesh"
+        },
+        {
+          "k": "Towns",
+          "v": "2"
+        },
+        {
+          "k": "From",
+          "v": "Rs 3,000"
+        },
+        {
+          "k": "Rates checked",
+          "v": "Jul 2026"
+        }
+      ],
+      "hotels": [
+        {
+          "name": "The Oberoi Cecil",
+          "street": "Chaura Maidan",
+          "locality": "Shimla",
+          "region": "Himachal Pradesh",
+          "priceRange": "Rs 16,000-Rs 45,000"
+        }
+      ]
+    },
+    {
+      "slug": "rishikesh-wellness-retreats",
+      "shortTitle": "Rishikesh retreats",
+      "place": "Rishikesh",
+      "title": "Rishikesh Retreats: 4 Real Wellness Stays (And 3 Spa Menus in Disguise)",
+      "h1": "Rishikesh retreats: 4 real wellness stays (and 3 spa menus in disguise)",
+      "description": "Wellness stays around Rishikesh range from serious multi-day programmes to a massage with a river view. How to tell them apart. Rates checked July 2026.",
+      "region": "Uttarakhand",
+      "published": "2026-07-27",
+      "publishedLabel": "27 Jul 2026",
+      "updated": "2026-07-27",
+      "updatedLabel": "27 Jul 2026",
+      "ratesChecked": "Jul 2026",
+      "ogImage": "images/hotels/taj-rishikesh-1200.jpg",
+      "keywords": [
+        "Rishikesh hotels",
+        "Ananda in the Himalayas",
+        "yoga retreat India",
+        "Ganges hotels",
+        "wellness India"
+      ],
+      "board": [
+        {
+          "k": "Town",
+          "v": "Rishikesh"
+        },
+        {
+          "k": "Options",
+          "v": "3"
+        },
+        {
+          "k": "From",
+          "v": "Rs 2,000"
+        },
+        {
+          "k": "Rates checked",
+          "v": "Jul 2026"
+        }
+      ],
+      "hotels": [
+        {
+          "name": "Ananda in the Himalayas",
+          "street": "The Palace Estate, Narendra Nagar",
+          "locality": "Tehri Garhwal",
+          "region": "Uttarakhand",
+          "priceRange": "Rs 55,000-Rs 200,000"
+        }
+      ]
+    },
+    {
+      "slug": "wildlife-lodges-ranthambore",
+      "shortTitle": "Ranthambore lodges",
+      "place": "Ranthambore",
+      "title": "Ranthambore Lodges: The Real Cost of Safari Access (Honest Breakdown)",
+      "h1": "Ranthambore lodges: The real cost of safari access (honest breakdown)",
+      "description": "How the zone permit system works, why it decides your tiger odds more than the lodge does, and what the camps actually cost. Rates checked July 2026.",
+      "region": "Rajasthan",
+      "published": "2026-07-27",
+      "publishedLabel": "27 Jul 2026",
+      "updated": "2026-07-27",
+      "updatedLabel": "27 Jul 2026",
+      "ratesChecked": "Jul 2026",
+      "ogImage": "images/hotels/aman-i-khas-1200.jpg",
+      "keywords": [
+        "Ranthambore lodges",
+        "tiger safari India",
+        "Sawai Madhopur hotels",
+        "Ranthambore zones"
+      ],
+      "board": [
+        {
+          "k": "Park",
+          "v": "Ranthambore"
+        },
+        {
+          "k": "Options",
+          "v": "3"
+        },
+        {
+          "k": "From",
+          "v": "Rs 4,000"
+        },
+        {
+          "k": "Rates checked",
+          "v": "Jul 2026"
+        }
+      ],
+      "hotels": [
+        {
+          "name": "Aman-i-Khas",
+          "locality": "Sawai Madhopur",
+          "region": "Rajasthan",
+          "priceRange": "Rs 120,000-Rs 250,000"
+        },
+        {
+          "name": "The Oberoi Vanyavilas",
+          "street": "Ranthambhore Road",
+          "locality": "Sawai Madhopur",
+          "region": "Rajasthan",
+          "priceRange": "Rs 55,000-Rs 150,000"
+        }
+      ]
+    },
+    {
+      "slug": "hyderabad-luxury-hotels",
+      "shortTitle": "Hyderabad hotels",
+      "place": "Hyderabad",
+      "title": "Hyderabad Luxury Hotels: Falaknuma vs Banjara Hills vs HITEC City",
+      "h1": "Hyderabad luxury hotels: Falaknuma vs Banjara Hills vs HITEC City",
+      "description": "Taj Falaknuma Palace against Banjara Hills and HITEC City. Which side of a very spread-out city to sleep on. Indicative rates checked July 2026.",
+      "region": "Telangana",
+      "published": "2026-07-27",
+      "publishedLabel": "27 Jul 2026",
+      "updated": "2026-07-27",
+      "updatedLabel": "27 Jul 2026",
+      "ratesChecked": "Jul 2026",
+      "ogImage": "images/hotels/taj-falaknuma-1200.jpg",
+      "keywords": [
+        "Hyderabad hotels",
+        "Taj Falaknuma Palace",
+        "Banjara Hills",
+        "HITEC City hotels"
+      ],
+      "board": [
+        {
+          "k": "City",
+          "v": "Hyderabad"
+        },
+        {
+          "k": "Areas",
+          "v": "3"
+        },
+        {
+          "k": "From",
+          "v": "Rs 6,000"
+        },
+        {
+          "k": "Rates checked",
+          "v": "Jul 2026"
+        }
+      ],
+      "hotels": [
+        {
+          "name": "Taj Falaknuma Palace",
+          "street": "Engine Bowli, Falaknuma",
+          "locality": "Hyderabad",
+          "region": "Telangana",
+          "priceRange": "Rs 45,000-Rs 250,000"
+        }
+      ]
+    },
+    {
+      "slug": "kolkata-heritage-hotels",
+      "shortTitle": "Kolkata heritage hotels",
+      "place": "Kolkata",
+      "title": "Kolkata Heritage Hotels: Is The Oberoi Grand Still the Best?",
+      "h1": "Kolkata heritage hotels: Is The Oberoi Grand still the best?",
+      "description": "The Oberoi Grand on Chowringhee against ITC Sonar out towards the bypass. Why central wins in Kolkata. Indicative rates checked July 2026.",
+      "region": "West Bengal",
+      "published": "2026-07-27",
+      "publishedLabel": "27 Jul 2026",
+      "updated": "2026-07-27",
+      "updatedLabel": "27 Jul 2026",
+      "ratesChecked": "Jul 2026",
+      "ogImage": "images/hotels/oberoi-grand-kolkata-1200.jpg",
+      "keywords": [
+        "Kolkata hotels",
+        "Oberoi Grand",
+        "ITC Sonar",
+        "Chowringhee",
+        "Park Street"
+      ],
+      "board": [
+        {
+          "k": "City",
+          "v": "Kolkata"
+        },
+        {
+          "k": "Hotels",
+          "v": "2"
+        },
+        {
+          "k": "From",
+          "v": "Rs 9,000"
+        },
+        {
+          "k": "Rates checked",
+          "v": "Jul 2026"
+        }
+      ],
+      "hotels": [
+        {
+          "name": "The Oberoi Grand",
+          "street": "15 Jawaharlal Nehru Road",
+          "locality": "Kolkata",
+          "region": "West Bengal",
+          "priceRange": "Rs 14,000-Rs 60,000"
+        },
+        {
+          "name": "ITC Royal Bengal",
+          "street": "JBS Haldane Avenue",
+          "locality": "Kolkata",
+          "region": "West Bengal",
+          "priceRange": "Rs 11,000-Rs 50,000"
+        }
+      ]
+    },
+    {
+      "slug": "andaman-island-resorts",
+      "shortTitle": "Andaman resorts",
+      "place": "Andamans",
+      "title": "Andaman Resorts: Havelock vs Neil Island (And 1 Resort to Skip)",
+      "h1": "Andaman resorts: Havelock vs Neil Island (and 1 resort to skip)",
+      "description": "Havelock and Neil island stays, why the inter-island ferry decides your itinerary, and what happens in monsoon. Indicative rates checked July 2026.",
+      "region": "Andaman Islands",
+      "published": "2026-07-27",
+      "publishedLabel": "27 Jul 2026",
+      "updated": "2026-07-27",
+      "updatedLabel": "27 Jul 2026",
+      "ratesChecked": "Jul 2026",
+      "ogImage": "images/hotels/barefoot-havelock-1200.jpg",
+      "keywords": [
+        "Andaman resorts",
+        "Havelock Island hotels",
+        "Radhanagar Beach",
+        "Neil Island",
+        "Taj Exotica Andamans"
+      ],
+      "board": [
+        {
+          "k": "Islands",
+          "v": "Havelock, Neil"
+        },
+        {
+          "k": "Options",
+          "v": "3"
+        },
+        {
+          "k": "From",
+          "v": "Rs 3,500"
+        },
+        {
+          "k": "Rates checked",
+          "v": "Jul 2026"
+        }
+      ],
+      "hotels": [
+        {
+          "name": "Taj Exotica Resort and Spa Andamans",
+          "street": "Radhanagar",
+          "locality": "Swaraj Dweep",
+          "region": "Andaman and Nicobar Islands",
+          "priceRange": "Rs 40,000-Rs 150,000"
+        }
+      ]
+    },
+    {
+      "slug": "ladakh-hotels-leh",
+      "shortTitle": "Ladakh and Leh stays",
+      "place": "Ladakh",
+      "title": "Leh Ladakh Stays: The 5 Hotels You Need for Altitude Adjustment",
+      "h1": "Leh Ladakh stays: The 5 hotels you need for altitude adjustment",
+      "description": "Where to stay in Leh and the valleys, and why acclimatisation should shape the booking more than the view. Indicative rates checked July 2026.",
+      "region": "Ladakh",
+      "published": "2026-07-27",
+      "publishedLabel": "27 Jul 2026",
+      "updated": "2026-07-27",
+      "updatedLabel": "27 Jul 2026",
+      "ratesChecked": "Jul 2026",
+      "ogImage": "images/hotels/nimmu-house-1200.jpg",
+      "keywords": [
+        "Leh hotels",
+        "Ladakh accommodation",
+        "Nimmu House",
+        "Stok",
+        "altitude sickness Leh"
+      ],
+      "board": [
+        {
+          "k": "Region",
+          "v": "Ladakh"
+        },
+        {
+          "k": "Options",
+          "v": "3"
+        },
+        {
+          "k": "From",
+          "v": "Rs 2,500"
+        },
+        {
+          "k": "Rates checked",
+          "v": "Jul 2026"
+        }
+      ],
+      "hotels": [
+        {
+          "name": "Nimmu House",
+          "street": "Nimmu village",
+          "locality": "Leh",
+          "region": "Ladakh",
+          "priceRange": "Rs 12,000-Rs 30,000"
+        }
+      ]
+    },
+    {
+      "slug": "darjeeling-tea-estate-stays",
+      "shortTitle": "Darjeeling tea estates",
+      "place": "Darjeeling",
+      "title": "Darjeeling Tea Estate Stays: 4 Bungalows Worth the Money",
+      "h1": "Darjeeling tea estate stays: 4 bungalows worth the money",
+      "description": "Glenburn and the estate bungalows against staying in Darjeeling town. When Kangchenjunga is actually visible. Indicative rates checked July 2026.",
+      "region": "West Bengal",
+      "published": "2026-07-27",
+      "publishedLabel": "27 Jul 2026",
+      "updated": "2026-07-27",
+      "updatedLabel": "27 Jul 2026",
+      "ratesChecked": "Jul 2026",
+      "ogImage": "images/hotels/glenburn-tea-estate-1200.jpg",
+      "keywords": [
+        "Darjeeling hotels",
+        "Glenburn Tea Estate",
+        "tea bungalow stay",
+        "Kangchenjunga view"
+      ],
+      "board": [
+        {
+          "k": "Region",
+          "v": "Darjeeling"
+        },
+        {
+          "k": "Options",
+          "v": "2"
+        },
+        {
+          "k": "From",
+          "v": "Rs 3,000"
+        },
+        {
+          "k": "Rates checked",
+          "v": "Jul 2026"
+        }
+      ],
+      "hotels": [
+        {
+          "name": "Glenburn Tea Estate",
+          "street": "Glenburn",
+          "locality": "Darjeeling",
+          "region": "West Bengal",
+          "priceRange": "Rs 30,000-Rs 60,000"
+        }
+      ]
+    },
+    {
+      "slug": "amritsar-hotels-golden-temple",
+      "shortTitle": "Amritsar hotels",
+      "place": "Amritsar",
+      "title": "Best Hotels Under 3000 Near the Golden Temple, Amritsar",
+      "h1": "Best hotels under 3000 near the Golden Temple, Amritsar",
+      "description": "Walking distance to the Golden Temple is the whole decision in Amritsar, and the free pilgrim accommodation is worth understanding. Rates checked July 2026.",
+      "region": "Punjab",
+      "published": "2026-07-27",
+      "publishedLabel": "27 Jul 2026",
+      "updated": "2026-07-27",
+      "updatedLabel": "27 Jul 2026",
+      "ratesChecked": "Jul 2026",
+      "ogImage": "images/hotels/taj-swarna-amritsar-1200.jpg",
+      "keywords": [
+        "Amritsar hotels",
+        "Golden Temple accommodation",
+        "Taj Swarna",
+        "Sarai Amritsar"
+      ],
+      "board": [
+        {
+          "k": "City",
+          "v": "Amritsar"
+        },
+        {
+          "k": "Options",
+          "v": "3"
+        },
+        {
+          "k": "From",
+          "v": "Free"
+        },
+        {
+          "k": "Rates checked",
+          "v": "Jul 2026"
+        }
+      ],
+      "hotels": [
+        {
+          "name": "Taj Swarna",
+          "street": "Kitchlu Nagar",
+          "locality": "Amritsar",
+          "region": "Punjab",
+          "priceRange": "Rs 9,000-Rs 35,000"
+        }
+      ]
+    },
+    {
+      "slug": "budget-hostels-india",
+      "shortTitle": "Budget hostels in India",
+      "place": "Budget India",
+      "title": "What 700/Night Actually Gets You in Indian Hostels (Honest Photos)",
+      "h1": "What 700/night actually gets you in Indian hostels (honest photos)",
+      "description": "The hostel chains, what to check before booking a dorm in India, and where the cheap end genuinely works. Indicative rates checked July 2026.",
+      "region": "India",
+      "published": "2026-07-27",
+      "publishedLabel": "27 Jul 2026",
+      "updated": "2026-07-27",
+      "updatedLabel": "27 Jul 2026",
+      "ratesChecked": "Jul 2026",
+      "ogImage": "images/hotels/varanasi-ghats-1200.jpg",
+      "keywords": [
+        "hostels India",
+        "Zostel",
+        "backpacking India",
+        "budget travel India",
+        "dorm beds India"
+      ],
+      "board": [
+        {
+          "k": "Coverage",
+          "v": "All India"
+        },
+        {
+          "k": "Types",
+          "v": "3"
+        },
+        {
+          "k": "From",
+          "v": "Rs 500"
+        },
+        {
+          "k": "Rates checked",
+          "v": "Jul 2026"
+        }
+      ],
+      "hotels": []
+    },
+    {
+      "slug": "eco-stays-india",
+      "shortTitle": "Eco stays in India",
+      "place": "Eco stays",
+      "title": "Eco Stays in India: 6 Real Eco Lodges (And 3 Greenwashed Scams)",
+      "h1": "Eco stays in India: 6 real eco lodges (and 3 greenwashed scams)",
+      "description": "Spice Village, Kaziranga lodges and how to check whether a property's sustainability claims mean anything. Indicative rates checked July 2026.",
+      "region": "India",
+      "published": "2026-07-27",
+      "publishedLabel": "27 Jul 2026",
+      "updated": "2026-07-27",
+      "updatedLabel": "27 Jul 2026",
+      "ratesChecked": "Jul 2026",
+      "ogImage": "images/hotels/spice-village-thekkady-1200.jpg",
+      "keywords": [
+        "eco resorts India",
+        "Spice Village Thekkady",
+        "Kaziranga lodges",
+        "sustainable travel India",
+        "CGH Earth"
+      ],
+      "board": [
+        {
+          "k": "Coverage",
+          "v": "Kerala, Assam"
+        },
+        {
+          "k": "Options",
+          "v": "3"
+        },
+        {
+          "k": "From",
+          "v": "Rs 8,000"
+        },
+        {
+          "k": "Rates checked",
+          "v": "Jul 2026"
+        }
+      ],
+      "hotels": [
+        {
+          "name": "Spice Village",
+          "street": "Thekkady",
+          "locality": "Kumily",
+          "region": "Kerala",
+          "priceRange": "Rs 14,000-Rs 35,000"
+        },
+        {
+          "name": "Diphlu River Lodge",
+          "street": "Kohora",
+          "locality": "Kaziranga",
+          "region": "Assam",
+          "priceRange": "Rs 20,000-Rs 45,000"
+        }
+      ]
+    }
+  ]
+}
