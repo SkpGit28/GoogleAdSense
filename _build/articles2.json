@@ -4,8 +4,8 @@
       "slug": "best-hotels-new-delhi",
       "shortTitle": "Where to stay in Delhi",
       "place": "New Delhi",
-      "title": "Delhi Hotels: Where to Stay (And 2 Overpriced Hotels to Skip)",
-      "h1": "Delhi hotels: Where to stay (and 2 overpriced hotels to skip)",
+      "title": "Delhi Hotels: Which Area to Stay In (And the One to Skip)",
+      "h1": "Delhi hotels: which area to stay in (and the one to skip)",
       "description": "The Imperial and the Lutyens options against staying in the old city or near the airport. Metro lines, traffic and indicative rates checked July 2026.",
       "region": "Delhi",
       "published": "2026-07-27",
@@ -47,14 +47,17 @@
           "region": "Delhi",
           "priceRange": "Rs 18,000-Rs 90,000"
         }
-      ]
+      ],
+      "group": "North India",
+      "groupOrder": 2,
+      "itemOrder": 0
     },
     {
       "slug": "beach-resorts-goa",
       "shortTitle": "Goa beach resorts",
       "place": "Goa",
-      "title": "10 Goa Beach Resorts With Private Pools (Photos + Honest Pros & Cons)",
-      "h1": "10 Goa beach resorts with private pools (photos + honest pros & cons)",
+      "title": "Goa Beach Resorts With Private Pools (And the Strip to Avoid)",
+      "h1": "Goa beach resorts with private pools (and the strip to avoid)",
       "description": "Taj Fort Aguada in the north against the quiet south Goa beaches. Which coast suits which trip, with indicative rates checked July 2026.",
       "region": "Goa",
       "published": "2026-07-27",
@@ -96,7 +99,10 @@
           "region": "Goa",
           "priceRange": "Rs 18,000-Rs 70,000"
         }
-      ]
+      ],
+      "group": "The coast and the islands",
+      "groupOrder": 3,
+      "itemOrder": 0
     },
     {
       "slug": "hotels-near-taj-mahal-agra",
@@ -145,7 +151,10 @@
           "region": "Uttar Pradesh",
           "priceRange": "Rs 12,000-Rs 60,000"
         }
-      ]
+      ],
+      "group": "North India",
+      "groupOrder": 2,
+      "itemOrder": 1
     },
     {
       "slug": "himachal-hill-station-hotels",
@@ -194,14 +203,17 @@
           "region": "Himachal Pradesh",
           "priceRange": "Rs 16,000-Rs 45,000"
         }
-      ]
+      ],
+      "group": "The Himalayas",
+      "groupOrder": 1,
+      "itemOrder": 0
     },
     {
       "slug": "rishikesh-wellness-retreats",
       "shortTitle": "Rishikesh retreats",
       "place": "Rishikesh",
-      "title": "Rishikesh Retreats: 4 Real Wellness Stays (And 3 Spa Menus in Disguise)",
-      "h1": "Rishikesh retreats: 4 real wellness stays (and 3 spa menus in disguise)",
+      "title": "Rishikesh Retreats: Real Wellness Stays and the Spa Menus in Disguise",
+      "h1": "Rishikesh retreats: real wellness stays and the spa menus in disguise",
       "description": "Wellness stays around Rishikesh range from serious multi-day programmes to a massage with a river view. How to tell them apart. Rates checked July 2026.",
       "region": "Uttarakhand",
       "published": "2026-07-27",
@@ -243,7 +255,10 @@
           "region": "Uttarakhand",
           "priceRange": "Rs 55,000-Rs 200,000"
         }
-      ]
+      ],
+      "group": "The Himalayas",
+      "groupOrder": 1,
+      "itemOrder": 2
     },
     {
       "slug": "wildlife-lodges-ranthambore",
@@ -258,7 +273,7 @@
       "updated": "2026-07-27",
       "updatedLabel": "27 Jul 2026",
       "ratesChecked": "Jul 2026",
-      "ogImage": "images/hotels/aman-i-khas-1200.jpg",
+      "ogImage": "images/hotels/oberoi-vanyavilas-1200.jpg",
       "keywords": [
         "Ranthambore lodges",
         "tiger safari India",
@@ -297,7 +312,10 @@
           "region": "Rajasthan",
           "priceRange": "Rs 55,000-Rs 150,000"
         }
-      ]
+      ],
+      "group": "Rajasthan and the palace hotels",
+      "groupOrder": 0,
+      "itemOrder": 2
     },
     {
       "slug": "hyderabad-luxury-hotels",
@@ -345,7 +363,10 @@
           "region": "Telangana",
           "priceRange": "Rs 45,000-Rs 250,000"
         }
-      ]
+      ],
+      "group": "The big cities",
+      "groupOrder": 4,
+      "itemOrder": 2
     },
     {
       "slug": "kolkata-heritage-hotels",
@@ -401,7 +422,10 @@
           "region": "West Bengal",
           "priceRange": "Rs 11,000-Rs 50,000"
         }
-      ]
+      ],
+      "group": "The big cities",
+      "groupOrder": 4,
+      "itemOrder": 3
     },
     {
       "slug": "andaman-island-resorts",
@@ -450,14 +474,17 @@
           "region": "Andaman and Nicobar Islands",
           "priceRange": "Rs 40,000-Rs 150,000"
         }
-      ]
+      ],
+      "group": "The coast and the islands",
+      "groupOrder": 3,
+      "itemOrder": 1
     },
     {
       "slug": "ladakh-hotels-leh",
       "shortTitle": "Ladakh and Leh stays",
       "place": "Ladakh",
-      "title": "Leh Ladakh Stays: The 5 Hotels You Need for Altitude Adjustment",
-      "h1": "Leh Ladakh stays: The 5 hotels you need for altitude adjustment",
+      "title": "Leh Ladakh Stays: 3 Options and the Altitude Mistake to Avoid",
+      "h1": "Leh Ladakh stays: 3 options and the altitude mistake to avoid",
       "description": "Where to stay in Leh and the valleys, and why acclimatisation should shape the booking more than the view. Indicative rates checked July 2026.",
       "region": "Ladakh",
       "published": "2026-07-27",
@@ -499,14 +526,17 @@
           "region": "Ladakh",
           "priceRange": "Rs 12,000-Rs 30,000"
         }
-      ]
+      ],
+      "group": "The Himalayas",
+      "groupOrder": 1,
+      "itemOrder": 1
     },
     {
       "slug": "darjeeling-tea-estate-stays",
       "shortTitle": "Darjeeling tea estates",
       "place": "Darjeeling",
-      "title": "Darjeeling Tea Estate Stays: 4 Bungalows Worth the Money",
-      "h1": "Darjeeling tea estate stays: 4 bungalows worth the money",
+      "title": "Darjeeling Tea Estate Stays: Is Glenburn Worth It? (And the Town Alternative)",
+      "h1": "Darjeeling tea estate stays: is Glenburn worth it? (and the town alternative)",
       "description": "Glenburn and the estate bungalows against staying in Darjeeling town. When Kangchenjunga is actually visible. Indicative rates checked July 2026.",
       "region": "West Bengal",
       "published": "2026-07-27",
@@ -547,14 +577,17 @@
           "region": "West Bengal",
           "priceRange": "Rs 30,000-Rs 60,000"
         }
-      ]
+      ],
+      "group": "The Himalayas",
+      "groupOrder": 1,
+      "itemOrder": 3
     },
     {
       "slug": "amritsar-hotels-golden-temple",
       "shortTitle": "Amritsar hotels",
       "place": "Amritsar",
-      "title": "Best Hotels Under 3000 Near the Golden Temple, Amritsar",
-      "h1": "Best hotels under 3000 near the Golden Temple, Amritsar",
+      "title": "Where to Stay Near the Golden Temple, Amritsar (Including the Free Option)",
+      "h1": "Where to stay near the Golden Temple, Amritsar (including the free option)",
       "description": "Walking distance to the Golden Temple is the whole decision in Amritsar, and the free pilgrim accommodation is worth understanding. Rates checked July 2026.",
       "region": "Punjab",
       "published": "2026-07-27",
@@ -562,7 +595,7 @@
       "updated": "2026-07-27",
       "updatedLabel": "27 Jul 2026",
       "ratesChecked": "Jul 2026",
-      "ogImage": "images/hotels/taj-swarna-amritsar-1200.jpg",
+      "ogImage": "images/hotels/hyatt-amritsar-1200.jpg",
       "keywords": [
         "Amritsar hotels",
         "Golden Temple accommodation",
@@ -595,14 +628,17 @@
           "region": "Punjab",
           "priceRange": "Rs 9,000-Rs 35,000"
         }
-      ]
+      ],
+      "group": "North India",
+      "groupOrder": 2,
+      "itemOrder": 3
     },
     {
       "slug": "budget-hostels-india",
       "shortTitle": "Budget hostels in India",
       "place": "Budget India",
-      "title": "What 700/Night Actually Gets You in Indian Hostels (Honest Photos)",
-      "h1": "What 700/night actually gets you in Indian hostels (honest photos)",
+      "title": "What Rs 700 a Night Actually Gets You in Indian Hostels",
+      "h1": "What Rs 700 a night actually gets you in Indian hostels",
       "description": "The hostel chains, what to check before booking a dorm in India, and where the cheap end genuinely works. Indicative rates checked July 2026.",
       "region": "India",
       "published": "2026-07-27",
@@ -610,7 +646,7 @@
       "updated": "2026-07-27",
       "updatedLabel": "27 Jul 2026",
       "ratesChecked": "Jul 2026",
-      "ogImage": "images/hotels/varanasi-ghats-1200.jpg",
+      "ogImage": "images/hotels/zostel-delhi-1200.jpg",
       "keywords": [
         "hostels India",
         "Zostel",
@@ -636,14 +672,17 @@
           "v": "Jul 2026"
         }
       ],
-      "hotels": []
+      "hotels": [],
+      "group": "By budget and by theme",
+      "groupOrder": 5,
+      "itemOrder": 0
     },
     {
       "slug": "eco-stays-india",
       "shortTitle": "Eco stays in India",
       "place": "Eco stays",
-      "title": "Eco Stays in India: 6 Real Eco Lodges (And 3 Greenwashed Scams)",
-      "h1": "Eco stays in India: 6 real eco lodges (and 3 greenwashed scams)",
+      "title": "Eco Stays in India: 2 Real Eco Lodges (And How to Spot Greenwashing)",
+      "h1": "Eco stays in India: 2 real eco lodges (and how to spot greenwashing)",
       "description": "Spice Village, Kaziranga lodges and how to check whether a property's sustainability claims mean anything. Indicative rates checked July 2026.",
       "region": "India",
       "published": "2026-07-27",
@@ -651,7 +690,7 @@
       "updated": "2026-07-27",
       "updatedLabel": "27 Jul 2026",
       "ratesChecked": "Jul 2026",
-      "ogImage": "images/hotels/spice-village-thekkady-1200.jpg",
+      "ogImage": "images/hotels/diphlu-river-lodge-1200.jpg",
       "keywords": [
         "eco resorts India",
         "Spice Village Thekkady",
@@ -692,7 +731,10 @@
           "region": "Assam",
           "priceRange": "Rs 20,000-Rs 45,000"
         }
-      ]
+      ],
+      "group": "By budget and by theme",
+      "groupOrder": 5,
+      "itemOrder": 1
     }
   ]
 }

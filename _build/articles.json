@@ -60,7 +60,10 @@
           "region": "Rajasthan",
           "priceRange": "Rs 14,000-Rs 45,000"
         }
-      ]
+      ],
+      "group": "Rajasthan and the palace hotels",
+      "groupOrder": 0,
+      "itemOrder": 0
     },
     {
       "slug": "best-hotels-udaipur",
@@ -115,7 +118,10 @@
           "region": "Rajasthan",
           "priceRange": "Rs 45,000-Rs 300,000"
         }
-      ]
+      ],
+      "group": "Rajasthan and the palace hotels",
+      "groupOrder": 0,
+      "itemOrder": 1
     },
     {
       "slug": "heritage-hotels-mumbai",
@@ -178,7 +184,10 @@
           "region": "Maharashtra",
           "priceRange": "Rs 16,000-Rs 45,000"
         }
-      ]
+      ],
+      "group": "The big cities",
+      "groupOrder": 4,
+      "itemOrder": 0
     },
     {
       "slug": "kerala-backwater-resorts",
@@ -234,7 +243,10 @@
           "region": "Kerala",
           "priceRange": "Rs 14,000-Rs 40,000"
         }
-      ]
+      ],
+      "group": "The coast and the islands",
+      "groupOrder": 3,
+      "itemOrder": 2
     },
     {
       "slug": "varanasi-ghat-hotels",
@@ -282,14 +294,17 @@
           "region": "Uttar Pradesh",
           "priceRange": "Rs 20,000-Rs 70,000"
         }
-      ]
+      ],
+      "group": "North India",
+      "groupOrder": 2,
+      "itemOrder": 2
     },
     {
       "slug": "bengaluru-business-hotels",
       "shortTitle": "Bengaluru business hotels",
       "place": "Bengaluru",
-      "title": "Bengaluru Business Hotels: The Only 5 With Fast Wi-Fi and No Traffic Pain",
-      "h1": "Bengaluru business hotels: The only 5 with fast Wi-Fi and no traffic pain",
+      "title": "Bengaluru Business Hotels: 2 That Actually Solve the Traffic Problem",
+      "h1": "Bengaluru business hotels: 2 that actually solve the traffic problem",
       "description": "The Leela Palace and Taj West End compared on the only thing that matters in Bengaluru, which is how long it takes to get to your meeting. Rates checked July 2026.",
       "region": "Karnataka",
       "published": "2026-07-27",
@@ -337,7 +352,10 @@
           "region": "Karnataka",
           "priceRange": "Rs 13,000-Rs 60,000"
         }
-      ]
+      ],
+      "group": "The big cities",
+      "groupOrder": 4,
+      "itemOrder": 1
     }
   ]
 }
