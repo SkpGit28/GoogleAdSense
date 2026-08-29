@@ -78,7 +78,8 @@
       <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">&#9776;</button>
       <nav class="nav" id="site-nav">
         <a href="index.html" class="active">Home</a>
-        <a href="articles/index.html">Guides</a>
+        <a href="#consumer-advisory">Consumer Guides</a>
+        <a href="#hotel-audits">Hotel Audits</a>
         <a href="tools.html">Tools</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
@@ -88,19 +89,119 @@
 
   <section class="hero">
     <div class="hero-inner">
-      <h1 class="marker">Where to actually stay in India</h1>
-      <p>Guides to real hotels, written from published rates, hotel material and guest reviews
-        read in bulk. Every rate is a rupee range with the month it was checked next to it. Every
-        hotel gets its drawbacks listed, and in most guides there is at least one property I
-        suggest you skip.</p>
+      <h1 class="marker">Consumer Travel & Hotel Advisory</h1>
+      <p>Independent research on hotel tariffs, hidden taxes, check-in regulations, and accommodation audits across India. Real rupee breakdowns, statutory consumer rights, and objective property analysis—free from sponsored bias.</p>
     </div>
   </section>
 
   <main id="main">
-    <h2 class="section-title">
-      <span>All guides</span>
-      <span class="count">20 published</span>
-    </h2>
+    <!-- 1. Consumer Advisory & Legal Guides -->
+    <section id="consumer-advisory">
+      <h2 class="section-title">
+        <span>Consumer Advisory & Booking Protection</span>
+        <span class="count">4 Essential Guides</span>
+      </h2>
+
+      <ul class="advisory-grid">
+        <li class="advisory-card">
+          <div class="advisory-card__header">
+            <span class="advisory-card__badge">Tax Regulations</span>
+            <h3 class="advisory-card__title">
+              <a href="articles/hotel-gst-hidden-charges-india.html">Hotel GST in India Explained: The 12% vs 18% Rule</a>
+            </h3>
+          </div>
+          <p class="advisory-card__desc">Why room rates jump at checkout, the ₹7,500 threshold rules, transaction value vs rack rate, and how to verify hotel GSTIN invoices.</p>
+          <div class="advisory-card__footer">
+            <span class="badge badge--checked">Verified Tax Slabs</span>
+            <a href="articles/hotel-gst-hidden-charges-india.html" class="advisory-card__link">Read guide &rarr;</a>
+          </div>
+        </li>
+
+        <li class="advisory-card">
+          <div class="advisory-card__header">
+            <span class="advisory-card__badge">Guest Rights & Law</span>
+            <h3 class="advisory-card__title">
+              <a href="articles/hotel-check-in-rules-id-laws-india.html">Indian Hotel Check-In Rules: Valid IDs, Form C & Rights</a>
+            </h3>
+          </div>
+          <p class="advisory-card__desc">Ministry of Tourism ID rules, DigiLocker validity, Form C filing for foreign passport holders, and what Indian law states for unmarried couples.</p>
+          <div class="advisory-card__footer">
+            <span class="badge badge--checked">Statutory Review</span>
+            <a href="articles/hotel-check-in-rules-id-laws-india.html" class="advisory-card__link">Read guide &rarr;</a>
+          </div>
+        </li>
+
+        <li class="advisory-card">
+          <div class="advisory-card__header">
+            <span class="advisory-card__badge">Tariff Intelligence</span>
+            <h3 class="advisory-card__title">
+              <a href="articles/monsoon-wedding-tariff-surge-calendar.html">When Hotel Rates Spike: Wedding & Monsoon Calendar</a>
+            </h3>
+          </div>
+          <p class="advisory-card__desc">Why room rates triple during auspicious winter Saya dates, the 50% to 65% monsoon discount window, and long-weekend booking rules.</p>
+          <div class="advisory-card__footer">
+            <span class="badge badge--checked">Market Audits</span>
+            <a href="articles/monsoon-wedding-tariff-surge-calendar.html" class="advisory-card__link">Read guide &rarr;</a>
+          </div>
+        </li>
+
+        <li class="advisory-card">
+          <div class="advisory-card__header">
+            <span class="advisory-card__badge">Consumer Protection</span>
+            <h3 class="advisory-card__title">
+              <a href="articles/non-refundable-hotel-cancellation-traps.html">Non-Refundable Hotel Bookings: Traps & Consumer Rights</a>
+            </h3>
+          </div>
+          <p class="advisory-card__desc">How to navigate OTA timezone cancellation cutoffs, portal wallet tricks, transit disruption disputes, and consumer court remedies in India.</p>
+          <div class="advisory-card__footer">
+            <span class="badge badge--checked">Legal Remedies</span>
+            <a href="articles/non-refundable-hotel-cancellation-traps.html" class="advisory-card__link">Read guide &rarr;</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 2. Interactive Travel Tools -->
+    <section id="travel-tools">
+      <h2 class="section-title">
+        <span>Interactive Travel Tools</span>
+        <span class="count"><a href="tools.html" style="color: inherit; text-decoration: none;">View All 5 Tools &rarr;</a></span>
+      </h2>
+
+      <ul class="tools-quick-grid">
+        <li>
+          <a href="budget-calculator.html" class="tools-quick-card">
+            <h3>Trip Budget Calculator</h3>
+            <p>Estimate full trip costs with taxes, meals, and local transit.</p>
+          </a>
+        </li>
+        <li>
+          <a href="price-inflator.html" class="tools-quick-card">
+            <h3>Hotel Price Inflator</h3>
+            <p>Calculate total payable bills including 12% or 18% GST and fees.</p>
+          </a>
+        </li>
+        <li>
+          <a href="hotel-compare.html" class="tools-quick-card">
+            <h3>Hotel Comparison Engine</h3>
+            <p>Side-by-side trade-offs between two competing properties.</p>
+          </a>
+        </li>
+        <li>
+          <a href="dealbreaker-quiz.html" class="tools-quick-card">
+            <h3>Dealbreaker Quiz</h3>
+            <p>Quick filter to identify your non-negotiable hotel requirements.</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 3. Destination Accommodation Audits -->
+    <section id="hotel-audits">
+      <h2 class="section-title">
+        <span>Destination Accommodation Audits</span>
+        <span class="count">20 Published Guides</span>
+      </h2>
 
     <ul class="index-list">
 
@@ -344,22 +445,23 @@
         </div>
       </li>
     </ul>
+    </section>
 
     <div class="container">
       <div class="ad-slot ad-bottom"></div>
     </div>
 
-    <h2 class="section-title"><span>How this site works</span></h2>
+    <h2 class="section-title"><span>Editorial Standards</span></h2>
 
     <div class="container">
       <div class="highlight-box" style="max-width:70ch;">
-        <h3>The short version</h3>
+        <h3>Editorial Standards & Independence</h3>
         <ul>
           <li>One writer, <a href="about.html">Sushant Kumar</a>, named on every guide. No invented co-authors.</li>
-          <li>Rates are ranges in rupees, each stamped with the month checked. They move, so check before booking.</li>
-          <li>I have not stayed at every hotel here and the site does not pretend I have.</li>
-          <li>Photographs are other people's work, credited on the <a href="credits.html">credits page</a>.</li>
-          <li>Where something could not be confirmed, the guide says so.</li>
+          <li>Rates are ranges in rupees, independently verified across booking channels with checked dates.</li>
+          <li>Independent accommodation auditing, statutory consumer advice, and zero sponsored placements.</li>
+          <li>Photographs are verified creative commons work, credited on the <a href="credits.html">credits page</a>.</li>
+          <li>Where something could not be confirmed, the guide explicitly says so.</li>
         </ul>
       </div>
     </div>

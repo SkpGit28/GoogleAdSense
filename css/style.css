@@ -1042,6 +1042,133 @@ blockquote {
 }
 
 /* --------------------------------------------------------------------------
+   Consumer Advisory Cards & Tools Strip
+   -------------------------------------------------------------------------- */
+.advisory-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--s-5);
+  max-width: var(--max-width);
+  margin: 0 auto var(--s-8);
+  padding: 0;
+  list-style: none;
+}
+
+.advisory-card {
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-top: 4px solid var(--signal);
+  padding: var(--s-5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: background var(--transition);
+}
+
+.advisory-card:hover {
+  background: var(--paper-sunk);
+}
+
+.advisory-card__header {
+  margin-bottom: var(--s-3);
+}
+
+.advisory-card__badge {
+  display: inline-block;
+  font-size: var(--t-xs);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: var(--s-2);
+}
+
+.advisory-card__title {
+  font-size: var(--t-lg);
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 0 var(--s-3);
+}
+
+.advisory-card__title a {
+  color: var(--ink-strong);
+  text-decoration: none;
+}
+
+.advisory-card__title a:hover {
+  color: var(--accent);
+}
+
+.advisory-card__desc {
+  font-family: var(--font-read);
+  font-size: var(--t-base);
+  color: var(--ink-muted);
+  line-height: 1.5;
+  margin: 0 0 var(--s-4);
+  flex-grow: 1;
+}
+
+.advisory-card__footer {
+  font-size: var(--t-sm);
+  font-weight: 700;
+  border-top: 1px solid var(--rule);
+  padding-top: var(--s-3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.advisory-card__link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.advisory-card__link:hover {
+  text-decoration: underline;
+}
+
+.tools-quick-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--s-4);
+  max-width: var(--max-width);
+  margin: 0 auto var(--s-8);
+  padding: 0;
+  list-style: none;
+}
+
+.tools-quick-card {
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  padding: var(--s-4);
+  text-decoration: none;
+  color: var(--ink);
+  display: flex;
+  flex-direction: column;
+  transition: background var(--transition);
+}
+
+.tools-quick-card:hover {
+  background: var(--paper-sunk);
+  border-color: var(--rule-strong);
+}
+
+.tools-quick-card h3 {
+  font-size: var(--t-base);
+  font-weight: 700;
+  margin: 0 0 var(--s-1);
+  color: var(--ink-strong);
+}
+
+.tools-quick-card p {
+  font-size: var(--t-xs);
+  color: var(--ink-subtle);
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* --------------------------------------------------------------------------
    22. Motion and print
    -------------------------------------------------------------------------- */
 @media (prefers-reduced-motion: reduce) {
