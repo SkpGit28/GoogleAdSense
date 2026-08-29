@@ -1,3 +1,1 @@
-# ads.txt for primehotelpicks.com
-# Authorised Digital Sellers. See https://iabtechlab.com/ads-txt/
 google.com, pub-6151386626480770, DIRECT, f08c47fec0942fa0
