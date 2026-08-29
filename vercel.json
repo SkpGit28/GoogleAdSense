@@ -1,5 +1,27 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/articles/top-luxury-hotels-bali.html",
+      "destination": "/articles/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/best-hotels-new-york-city.html",
+      "destination": "/articles/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/best-hotels-rome-colosseum.html",
+      "destination": "/articles/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/best-all-inclusive-resorts-caribbean.html",
+      "destination": "/articles/index.html",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
