@@ -297,11 +297,11 @@
             const a_total_cheaper = a_total < b_total;
             
             if (a_base_cheaper != a_total_cheaper) {
-                verdictEl.innerHTML = "🚨 <strong>Trap Avoided:</strong> The advertised rate for the cheaper hotel was a lie due to taxes/fees. <strong>" + cheaper + "</strong> is actually cheaper by " + fmt(diff) + " overall.";
+                verdictEl.innerHTML = "<strong>Hidden Charges Detected:</strong> The advertised rate for the cheaper hotel masked higher taxes and fees. <strong>" + cheaper + "</strong> is actually cheaper by " + fmt(diff) + " overall.";
                 verdictEl.style.background = '#fff3e0';
                 verdictEl.style.borderLeftColor = '#e65100';
             } else {
-                verdictEl.innerHTML = "💡 <strong>" + cheaper + "</strong> is cheaper by " + fmt(diff) + " for the total stay.";
+                verdictEl.innerHTML = "<strong>" + cheaper + "</strong> is cheaper by " + fmt(diff) + " for the total stay.";
                 verdictEl.style.background = '#e8f5e9';
                 verdictEl.style.borderLeftColor = '#2e7d32';
             }
